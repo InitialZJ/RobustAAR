@@ -12,15 +12,15 @@
 
 2. 双击 `\path\to\PX4PSP\RflySim3D\RflySim3D.exe` 启动仿真，显示默认场景
 
-<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/4d34edefbaf7a4a866a8330573be3b534f6ab6a8/res/image-20240530162155493.png?token=ANMBRYQY3NNVDPNF2K62SXLGLBBQ2" alt="image-20240530162155493" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/main/res/image-20240530162155493.png?token=GHSAT0AAAAAACM7L7JSHVNQIBZ2OLHFYDJQZSZHMWA" alt="image-20240530162155493" style="zoom:50%;" />
 
 3. 打开 `matlab`，切换到 `\path\to\RobustAAR\AAR_Simulink` 目录，打开 `AirRefueling_Platform.slx`，点击上方的运行按钮，将在 `RflySim3D` 中生成 `AAR` 场景
 
-<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/87d67e0d8fb8c3d2b2b6f610975651ab35a4d776/res/image-20240530164701526.png?token=ANMBRYUESG3BUPVI3OEM77LGLBBVQ" alt="image-20240530164701526" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/main/res/image-20240530164701526.png?token=GHSAT0AAAAAACM7L7JS6BJJWVZVBBK46IQUZSZHNOA" alt="image-20240530164701526" style="zoom:50%;" />
 
 4. 初始时刻是加油机视角，按下 `B 1` 切换到受油机视角
 
-<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/42dbcd3c853902ea3ad7e4f21c08a5439295ba33/res/image-20240530164748222.png?token=ANMBRYSC4L63TOYQOCU3JVDGLBBWM" alt="image-20240530171032438" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/main/res/image-20240530164748222.png?token=GHSAT0AAAAAACM7L7JTKGXKHBNVDAHLSRYOZSZHONA" alt="image-20240530171032438" style="zoom:50%;" />
 
 ### 算法
 

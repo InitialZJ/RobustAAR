@@ -7,7 +7,7 @@
 1. 打开 `\path\to\PX4PSP\RflySimUE5\RflySim3D.exe`，手动切换地图为 `Desert`
 2. 修改 `AirRefueling_Platform.slx` 中锥套模块的 `ScaleXYZ` 值为 `[1,1,1]`，最后运行
 
-<img src="C:/Users/25434/AppData/Roaming/Typora/typora-user-images/image-20240530203324293.png" alt="image-20240530203324293" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/main/res/image-20240530203324293.png?token=GHSAT0AAAAAACM7L7JT63HJZUBLLTXPGAPAZSZHQJQ" alt="image-20240530203324293" style="zoom:67%;" />
 
 3. 将 `all_process_night_exp.py` 和 `all_process_night_plot.py` 拷贝到上一级目录
 4. 运行 `all_process_night_exp.py` 生成 `data.csv`

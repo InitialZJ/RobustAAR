@@ -1,0 +1,138 @@
+%implements s44_b0_9euqc_Terminate "C"
+
+%function Terminate(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+char_T *sErr;
+%closefile localVarDecl
+%assign tlcTerminateFcnOfS43B104 = OpaqueTLCBlockFcn("Terminate", 43, 104, 1, 39, 0)
+%assign tlcTerminateFcnOfS43B130 = OpaqueTLCBlockFcn("Terminate", 43, 130, 1, 39, 1)
+%assign tlcTerminateFcnOfS43B137 = OpaqueTLCBlockFcn("Terminate", 43, 137, 1, 39, 2)
+%assign tlcTerminateFcnOfS43B155 = OpaqueTLCBlockFcn("Terminate", 43, 155, 1, 39, 3)
+%assign tlcTerminateFcnOfS43B156 = OpaqueTLCBlockFcn("Terminate", 43, 156, 1, 39, 4)
+%assign tlcTerminateFcnOfS43B157 = OpaqueTLCBlockFcn("Terminate", 43, 157, 1, 39, 5)
+%assign tlcTerminateFcnOfS43B173 = OpaqueTLCBlockFcn("Terminate", 43, 173, 1, 39, 6)
+%assign tlcTerminateFcnOfS43B188 = OpaqueTLCBlockFcn("Terminate", 43, 188, 1, 39, 7)
+%assign tlcTerminateFcnOfS43B190 = OpaqueTLCBlockFcn("Terminate", 43, 190, 1, 39, 8)
+%assign tlcCleanupRuntimeResourcesFcnOfS43B173 = OpaqueTLCBlockFcn("CleanupRuntimeResources", 43, 173, 1, 39, 9)
+/* {S!d1804}Terminate for S-Function (sdspToNetwork): '<S7>/UDP Send' */
+sErr = GetErrorBuffer(&AirRefueling_Platform_DW.UDPSend_NetworkLib[0U]);
+LibTerminate(&AirRefueling_Platform_DW.UDPSend_NetworkLib[0U]);
+if (*sErr != 0) {
+    %<(RTMSetErrStat("sErr"))>;
+    %<(RTMSetStopRequested(1))>;
+}
+LibDestroy(&AirRefueling_Platform_DW.UDPSend_NetworkLib[0U], 1);
+DestroyUDPInterface(&AirRefueling_Platform_DW.UDPSend_NetworkLib[0U]);
+/* {E!d1804}End of Terminate for S-Function (sdspToNetwork): '<S7>/UDP Send' */
+
+/* {S!d1806}Terminate for S-Function (sdspToNetwork): '<S7>/UDP Send11' */
+sErr = GetErrorBuffer(&AirRefueling_Platform_DW.UDPSend11_NetworkLib[0U]);
+LibTerminate(&AirRefueling_Platform_DW.UDPSend11_NetworkLib[0U]);
+if (*sErr != 0) {
+    %<(RTMSetErrStat("sErr"))>;
+    %<(RTMSetStopRequested(1))>;
+}
+LibDestroy(&AirRefueling_Platform_DW.UDPSend11_NetworkLib[0U], 1);
+DestroyUDPInterface(&AirRefueling_Platform_DW.UDPSend11_NetworkLib[0U]);
+/* {E!d1806}End of Terminate for S-Function (sdspToNetwork): '<S7>/UDP Send11' */
+
+/* {S!d1808}Terminate for S-Function (sdspToNetwork): '<S7>/UDP Send3' */
+sErr = GetErrorBuffer(&AirRefueling_Platform_DW.UDPSend3_NetworkLib[0U]);
+LibTerminate(&AirRefueling_Platform_DW.UDPSend3_NetworkLib[0U]);
+if (*sErr != 0) {
+    %<(RTMSetErrStat("sErr"))>;
+    %<(RTMSetStopRequested(1))>;
+}
+LibDestroy(&AirRefueling_Platform_DW.UDPSend3_NetworkLib[0U], 1);
+DestroyUDPInterface(&AirRefueling_Platform_DW.UDPSend3_NetworkLib[0U]);
+/* {E!d1808}End of Terminate for S-Function (sdspToNetwork): '<S7>/UDP Send3' */
+
+/* {S!d1810}Terminate for S-Function (sdspToNetwork): '<S7>/UDP Send6' */
+sErr = GetErrorBuffer(&AirRefueling_Platform_DW.UDPSend6_NetworkLib[0U]);
+LibTerminate(&AirRefueling_Platform_DW.UDPSend6_NetworkLib[0U]);
+if (*sErr != 0) {
+    %<(RTMSetErrStat("sErr"))>;
+    %<(RTMSetStopRequested(1))>;
+}
+LibDestroy(&AirRefueling_Platform_DW.UDPSend6_NetworkLib[0U], 1);
+DestroyUDPInterface(&AirRefueling_Platform_DW.UDPSend6_NetworkLib[0U]);
+/* {E!d1810}End of Terminate for S-Function (sdspToNetwork): '<S7>/UDP Send6' */
+
+/* {S!d1812}Terminate for S-Function (sdspToNetwork): '<S7>/UDP Send1' */
+sErr = GetErrorBuffer(&AirRefueling_Platform_DW.UDPSend1_NetworkLib[0U]);
+LibTerminate(&AirRefueling_Platform_DW.UDPSend1_NetworkLib[0U]);
+if (*sErr != 0) {
+    %<(RTMSetErrStat("sErr"))>;
+    %<(RTMSetStopRequested(1))>;
+}
+LibDestroy(&AirRefueling_Platform_DW.UDPSend1_NetworkLib[0U], 1);
+DestroyUDPInterface(&AirRefueling_Platform_DW.UDPSend1_NetworkLib[0U]);
+/* {E!d1812}End of Terminate for S-Function (sdspToNetwork): '<S7>/UDP Send1' */
+
+/* {S!d1814}Terminate for S-Function (sdspToNetwork): '<S7>/UDP Send4' */
+sErr = GetErrorBuffer(&AirRefueling_Platform_DW.UDPSend4_NetworkLib[0U]);
+LibTerminate(&AirRefueling_Platform_DW.UDPSend4_NetworkLib[0U]);
+if (*sErr != 0) {
+    %<(RTMSetErrStat("sErr"))>;
+    %<(RTMSetStopRequested(1))>;
+}
+LibDestroy(&AirRefueling_Platform_DW.UDPSend4_NetworkLib[0U], 1);
+DestroyUDPInterface(&AirRefueling_Platform_DW.UDPSend4_NetworkLib[0U]);
+/* {E!d1814}End of Terminate for S-Function (sdspToNetwork): '<S7>/UDP Send4' */
+%if !WHITE_SPACE(tlcTerminateFcnOfS43B104)
+
+/* {S!d1816}Terminate for ToWorkspace: '<S1>/To Workspace2' */
+%<tlcTerminateFcnOfS43B104>\
+%endif
+%if !WHITE_SPACE(tlcTerminateFcnOfS43B130)
+/* {S!d1818}Terminate for ToWorkspace: '<S10>/To Workspace3' */
+%<tlcTerminateFcnOfS43B130>\
+%endif
+%if !WHITE_SPACE(tlcTerminateFcnOfS43B137)
+/* {S!d1820}Terminate for ToWorkspace: '<S16>/To Workspace3' */
+%<tlcTerminateFcnOfS43B137>\
+%endif
+%if !WHITE_SPACE(tlcTerminateFcnOfS43B155)
+/* {S!d1822}Terminate for ToWorkspace: '<S23>/To Workspace' */
+%<tlcTerminateFcnOfS43B155>\
+%endif
+%if !WHITE_SPACE(tlcTerminateFcnOfS43B156)
+/* {S!d1824}Terminate for ToWorkspace: '<S23>/To Workspace1' */
+%<tlcTerminateFcnOfS43B156>\
+%endif
+%if !WHITE_SPACE(tlcTerminateFcnOfS43B157)
+/* {S!d1826}Terminate for ToWorkspace: '<S23>/To Workspace2' */
+%<tlcTerminateFcnOfS43B157>\
+%endif
+%if !WHITE_SPACE(tlcTerminateFcnOfS43B173)
+/* {S!d1828}Terminate for S-Function (slrealtimeUDPReceive): '<Root>/UDP Receive' */
+%<tlcTerminateFcnOfS43B173>\
+%endif
+%if !WHITE_SPACE(tlcTerminateFcnOfS43B188)
+/* {S!d1830}Terminate for ToWorkspace: '<S3>/To Workspace' */
+%<tlcTerminateFcnOfS43B188>\
+%endif
+%if !WHITE_SPACE(tlcTerminateFcnOfS43B190)
+/* {S!d1832}Terminate for ToWorkspace: '<S3>/To Workspace1' */
+%<tlcTerminateFcnOfS43B190>\
+%endif
+%if !WHITE_SPACE(tlcCleanupRuntimeResourcesFcnOfS43B173)
+/* {S!d1834}CleanupRuntimeResources for S-Function (slrealtimeUDPReceive): '<Root>/UDP Receive' */
+%<tlcCleanupRuntimeResourcesFcnOfS43B173>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedTerminateLocalVars", localVarDecl)>
+%endfunction
+%function TerminateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Terminate(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 39, fcnProtoType)>
+%endfunction

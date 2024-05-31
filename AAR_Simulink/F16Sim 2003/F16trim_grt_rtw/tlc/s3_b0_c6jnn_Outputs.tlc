@@ -1,0 +1,213 @@
+%implements s3_b0_c6jnn_Outputs "C"
+
+%function Outputs(block, system) Output
+%<SLibCGIRAccessLocalVar(30, 0)> %% rtb_jxk
+%<SLibCGIRAccessLocalVar(28, 0)> %% rtb_kxi
+%<SLibCGIRAccessLocalVar(27, 0)> %% rtb_ixj
+%<SLibCGIRAccessLocalVar(20, 0)> %% rtb_TmpSignalConversionAtToWork
+%<SLibCGIRAccessLocalVar(21, 0)> %% rtb_InterpretedMATLABFunction
+
+%assign tlcOutputsFcnOfS3B5 = OpaqueTLCBlockFcn("Outputs", 3, 5, 0, 2)
+%assign tlcOutputsFcnOfS3B13 = OpaqueTLCBlockFcn("Outputs", 3, 13, 0, 2)
+%assign tlcOutputsFcnOfS3B16 = OpaqueTLCBlockFcn("Outputs", 3, 16, 0, 2)
+%assign tlcOutputsFcnOfS3B21 = OpaqueTLCBlockFcn("Outputs", 3, 21, 0, 2)
+%<SLibCG_TrackParam(3)>\
+%<SLibCG_TrackBlockIO(3)>\
+%<SLibCG_TrackEO(0)>\
+%<SLibCG_TrackEI(0)>\
+/* Sum: '<Root>/Sum1' incorporates:
+ *  Constant: '<Root>/Constant4'
+ *  Inport: '<Root>/In1'
+ */
+for (i = 0; i < 5; i++) {
+    rtb_Sum1[i] = F16trim_P.Constant4_Value[i] + F16trim_U.In1[i];
+}
+/* End of Sum: '<Root>/Sum1' */
+
+/* Gain: '<S14>/Unit Conversion' incorporates:
+ *  Constant: '<Root>/Constant2'
+ */
+F16trim_B.UnitConversion = F16trim_P.UnitConversion_Gain * F16trim_P.Constant2_Value;
+%<tlcOutputsFcnOfS3B5>\
+/* Gain: '<S13>/Unit Conversion' */
+rtb_UnitConversion = F16trim_P.UnitConversion_Gain_g * F16trim_B.SFunction_o4;
+/* MATLAB Function: '<Root>/MATLAB Function' incorporates:
+ *  Constant: '<Root>/Constant1'
+ */
+/* MATLAB Function 'MATLAB Function': '<S4>:1' */
+/* '<S4>:1:4' */
+rtb_y = F16trim_P.Constant1_Value_e * F16trim_P.Constant1_Value_e * 0.5 * rtb_UnitConversion;
+/* Gain: '<S22>/reference area' */
+rtb_referencearea = F16trim_P.referencearea_Gain * rtb_y;
+/* Gain: '<S6>/Unit Conversion' */
+rtb_UnitConversion_b_idx = F16trim_P.UnitConversion_Gain_d * rtb_Sum1[4];
+/* Saturate: '<S29>/Command Saturation' */
+if (rtb_Sum1[2] >= F16trim_P.CommandSaturation_UpperSat_m) {
+    rtb_ixj = F16trim_P.CommandSaturation_UpperSat_m;
+} else if (rtb_Sum1[2] <= F16trim_P.CommandSaturation_LowerSat_n) {
+    rtb_ixj = F16trim_P.CommandSaturation_LowerSat_n;
+} else {
+    rtb_ixj = rtb_Sum1[2];
+}
+/* End of Saturate: '<S29>/Command Saturation' */
+
+/* Saturate: '<S31>/Command Saturation' */
+if (rtb_Sum1[3] >= F16trim_P.CommandSaturation_UpperSat_p) {
+    rtb_kxi = F16trim_P.CommandSaturation_UpperSat_p;
+} else if (rtb_Sum1[3] <= F16trim_P.CommandSaturation_LowerSat_gr) {
+    rtb_kxi = F16trim_P.CommandSaturation_LowerSat_gr;
+} else {
+    rtb_kxi = rtb_Sum1[3];
+}
+/* End of Saturate: '<S31>/Command Saturation' */
+
+/* Sum: '<S7>/Sum' incorporates:
+ *  Constant: '<S16>/Unit Conversion Bias'
+ *  Constant: '<S7>/coeff1'
+ *  Gain: '<S16>/Unit Conversion Slope'
+ *  Gain: '<S7>/Gain2'
+ *  Gain: '<S7>/r2d6'
+ *  MATLAB Function: '<S2>/MATLAB Function1'
+ *  Product: '<Root>/Product'
+ *  Sum: '<S16>/Sum'
+ */
+/* MATLAB Function 'Environment Models/MATLAB Function1': '<S11>:1' */
+/* '<S11>:1:4' */
+rtb_jxk = (F16trim_P.Gain2_Gain * rtb_UnitConversion_b_idx - rtb_y / ((F16trim_P.UnitConversionSlope_Gain * F16trim_B.SFunction_o1 + F16trim_P.UnitConversionBias_Value) * 1715.0 * rtb_UnitConversion) * F16trim_P.r2d6_Gain) + F16trim_P.coeff1_Value;
+/* Saturate: '<S8>/Command Saturation' */
+if (rtb_jxk >= F16trim_P.CommandSaturation_UpperSat_i) {
+    rtb_jxk = F16trim_P.CommandSaturation_UpperSat_i;
+} else {
+    if (rtb_jxk <= F16trim_P.CommandSaturation_LowerSat_e) {
+        rtb_jxk = F16trim_P.CommandSaturation_LowerSat_e;
+    }
+}
+/* End of Saturate: '<S8>/Command Saturation' */
+
+/* Saturate: '<S7>/lef Saturation' */
+if (rtb_jxk >= F16trim_P.lefSaturation_UpperSat) {
+    rtb_jxk = F16trim_P.lefSaturation_UpperSat;
+} else {
+    if (rtb_jxk <= F16trim_P.lefSaturation_LowerSat) {
+        rtb_jxk = F16trim_P.lefSaturation_LowerSat;
+    }
+}
+/* End of Saturate: '<S7>/lef Saturation' */
+
+/* SignalConversion: '<S1>/TmpSignal ConversionAtTo WorkspaceInport1' incorporates:
+ *  Constant: '<Root>/Constant'
+ *  Constant: '<Root>/Constant1'
+ *  Constant: '<Root>/Constant3'
+ *  Gain: '<S6>/Unit Conversion'
+ */
+rtb_TmpSignalConversionAtToWork[0] = F16trim_P.Constant1_Value_e;
+rtb_TmpSignalConversionAtToWork[1] = rtb_UnitConversion_b_idx;
+rtb_TmpSignalConversionAtToWork[2] = F16trim_P.UnitConversion_Gain_d * F16trim_P.Constant_Value_e;
+rtb_TmpSignalConversionAtToWork[3] = F16trim_P.Constant3_Value[0];
+rtb_TmpSignalConversionAtToWork[4] = F16trim_P.Constant3_Value[1];
+rtb_TmpSignalConversionAtToWork[5] = F16trim_P.Constant3_Value[2];
+/* Saturate: '<S30>/Command Saturation' */
+if (rtb_Sum1[1] >= F16trim_P.CommandSaturation_UpperSat_c) {
+    /* SignalConversion: '<S1>/TmpSignal ConversionAtTo WorkspaceInport1' */
+    rtb_TmpSignalConversionAtToWork[6] = F16trim_P.CommandSaturation_UpperSat_c;
+} else if (rtb_Sum1[1] <= F16trim_P.CommandSaturation_LowerSat_g) {
+    /* SignalConversion: '<S1>/TmpSignal ConversionAtTo WorkspaceInport1' */
+    rtb_TmpSignalConversionAtToWork[6] = F16trim_P.CommandSaturation_LowerSat_g;
+} else {
+    /* SignalConversion: '<S1>/TmpSignal ConversionAtTo WorkspaceInport1' */
+    rtb_TmpSignalConversionAtToWork[6] = rtb_Sum1[1];
+}
+/* End of Saturate: '<S30>/Command Saturation' */
+
+/* SignalConversion: '<S1>/TmpSignal ConversionAtTo WorkspaceInport1' incorporates:
+ *  Constant: '<S1>/flag'
+ */
+rtb_TmpSignalConversionAtToWork[7] = rtb_ixj;
+rtb_TmpSignalConversionAtToWork[8] = rtb_kxi;
+rtb_TmpSignalConversionAtToWork[9] = F16trim_P.flag_Value;
+rtb_TmpSignalConversionAtToWork[10] = rtb_jxk;
+%<tlcOutputsFcnOfS3B13>\
+/* Product: '<S22>/Product' incorporates:
+ *  Gain: '<S22>/coefAdjust'
+ */
+rtb_UnitConversion = F16trim_P.coefAdjust_Gain[0] * rtb_InterpretedMATLABFunction[0] * rtb_referencearea;
+rtb_y = F16trim_P.coefAdjust_Gain[1] * rtb_InterpretedMATLABFunction[1] * rtb_referencearea;
+rtb_UnitConversion_b_idx = F16trim_P.coefAdjust_Gain[2] * rtb_InterpretedMATLABFunction[2] * rtb_referencearea;
+/* Sum: '<S3>/Sum' incorporates:
+ *  Constant: '<S5>/Constant1'
+ */
+rtb_Sum_p_idx = F16trim_P.Constant1_Value + rtb_UnitConversion_b_idx;
+/* Gain: '<S19>/Unit Conversion' incorporates:
+ *  Constant: '<S2>/Latitude'
+ *  SignalConversion: '<S12>/TmpSignal ConversionAtSelectorInport1'
+ */
+rtb_jxk = F16trim_P.UnitConversion_Gain_f * F16trim_P.Latitude_Value;
+/* Gain: '<S20>/Unit Conversion' incorporates:
+ *  Constant: '<S2>/Latitude'
+ *  SignalConversion: '<S12>/TmpSignal ConversionAtSelectorInport1'
+ */
+rtb_kxi = F16trim_P.UnitConversion_Gain_j * F16trim_P.Latitude_Value;
+/* Gain: '<S21>/Unit Conversion' incorporates:
+ *  Constant: '<Root>/Constant2'
+ *  SignalConversion: '<S12>/TmpSignal ConversionAtSelectorInport1'
+ */
+rtb_ixj = F16trim_P.UnitConversion_Gain_e * F16trim_P.Constant2_Value;
+%<tlcOutputsFcnOfS3B16>\
+/* Sum: '<S22>/Sum' incorporates:
+ *  Constant: '<S3>/Center of Gravity'
+ *  Constant: '<S3>/Center of Pressure'
+ */
+/* MATLAB Function 'Environment Models/MATLAB Function': '<S10>:1' */
+/* u3=636.94*32.17; */
+/* '<S10>:1:4' */
+rtb_Sum1_j_idx = F16trim_P.CenterofGravity_Value[2] - F16trim_P.CenterofPressure_Value[2];
+/* Product: '<S27>/j x k' */
+rtb_jxk = rtb_y * rtb_Sum1_j_idx;
+/* Product: '<S27>/k x i' incorporates:
+ *  Constant: '<S3>/Center of Gravity'
+ *  Constant: '<S3>/Center of Pressure'
+ *  Sum: '<S22>/Sum'
+ */
+rtb_kxi = (F16trim_P.CenterofGravity_Value[0] - F16trim_P.CenterofPressure_Value[0]) * rtb_UnitConversion_b_idx;
+/* Product: '<S27>/i x j' incorporates:
+ *  Constant: '<S3>/Center of Gravity'
+ *  Constant: '<S3>/Center of Pressure'
+ *  Sum: '<S22>/Sum'
+ */
+rtb_ixj = (F16trim_P.CenterofGravity_Value[1] - F16trim_P.CenterofPressure_Value[1]) * rtb_UnitConversion;
+/* Outport: '<Root>/F' incorporates:
+ *  Gain: '<S18>/Unit Conversion'
+ *  Gain: '<S22>/reference length'
+ *  Gain: '<S2>/Gravity in Earth Axes'
+ *  MATLAB Function: '<S2>/MATLAB Function'
+ *  Product: '<S22>/Product3'
+ *  Product: '<S28>/i x k'
+ *  Sum: '<Root>/Sum'
+ *  Sum: '<S22>/Sum1'
+ *  Sum: '<S23>/Sum'
+ */
+F16trim_Y.F[0] = F16trim_P.UnitConversion_Gain_eo * F16trim_B.MatrixConcatenate[2] * F16trim_P.GravityinEarthAxes_Gain * cos(rtb_Sum1[4]) + rtb_Sum_p_idx;
+F16trim_Y.F[1] = (rtb_kxi - rtb_UnitConversion * rtb_Sum1_j_idx) + F16trim_P.referencelength_Gain[1] * rtb_referencearea * rtb_InterpretedMATLABFunction[4];
+%<tlcOutputsFcnOfS3B21>\
+%<SLibInsertSolverResetCode()>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+
+%assign localVarDecl = ""
+%openfile localVarDecl
+real_T rtb_Sum1[5];
+real_T rtb_UnitConversion;
+real_T rtb_y;
+real_T rtb_referencearea;
+int32_T i;
+real_T rtb_Sum1_j_idx;
+real_T rtb_UnitConversion_b_idx;
+real_T rtb_Sum_p_idx;
+
+%closefile localVarDecl
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction

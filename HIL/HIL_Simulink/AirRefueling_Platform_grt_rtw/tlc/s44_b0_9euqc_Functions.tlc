@@ -1,0 +1,1732 @@
+%implements s44_b0_9euqc_Functions "C"
+
+%function rt_urand_Upu32_Yd_f_pw_snf_Fcn0(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+uint32_T hi;
+uint32_T lo;
+/* Uniform random number generator (random number between 0 and 1)
+
+#define IA      16807                      magic multiplier = 7^5
+#define IM      2147483647                 modulus = 2^31-1
+#define IQ      127773                     IM div IA
+#define IR      2836                       IM modulo IA
+#define S       4.656612875245797e-10      reciprocal of 2^31-1
+test = IA * (seed %<"\% IQ) - IR * (seed/IQ)\
+seed = test < 0 ? (test + IM) : test\
+return (seed*S)\
+"> */
+lo = *u % 127773U * 16807U;
+hi = *u / 127773U * 2836U;
+if (lo < hi) {
+    *u = 2147483647U - (hi - lo);
+} else {
+    *u = lo - hi;
+}
+return (real_T)*u * 4.6566128752457969E-10;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+extern real_T rt_urand_Upu32_Yd_f_pw_snf(\
+%assign comma = ""
+%<comma>uint32_T *u\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 0, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function rt_nrand_Upu32_Yd_f_pw_snf_Fcn1(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T si;
+real_T sr;
+real_T y;
+%assign _modelSS = ""
+
+%if SLibCG_FcnCallArgAccessed(1,1,1,0)
+%<SLibCG_AccessArg(1 ,1, 0)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,1,0,0)
+%<SLibCG_AccessArg(1 ,1, 0)>
+%endif
+
+/* Normal (Gaussian) random number generator */
+do {
+    sr = 2.0 * %<(SLibCGCallSubFcn("rt_urand_Upu32_Yd_f_pw_snf", ["u"], 1, 1, 0))> - 1.0;
+    si = 2.0 * %<(SLibCGCallSubFcn("rt_urand_Upu32_Yd_f_pw_snf", ["u"], 1, 1, 1))> - 1.0;
+    si = sr * sr + si * si;
+} while (si > 1.0);
+y = sqrt(-2.0 * log(si) / si) * sr;
+return y;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+extern real_T rt_nrand_Upu32_Yd_f_pw_snf(\
+%assign comma = ""
+%<comma>uint32_T *u\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 1, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function rt_atan2d_snf_Fcn2(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T y;
+int32_T u0_0;
+int32_T u1_0;
+if (rtIsNaN(u0) || rtIsNaN(u1)) {
+    y = %<LibGetMathConstant(LibRealNonFinite("nan"), FcnGetDataTypeIdFromName("double"))>;
+} else if (rtIsInf(u0) && rtIsInf(u1)) {
+    if (u0 > 0.0) {
+        u0_0 = 1;
+    } else {
+        u0_0 = -1;
+    }
+    if (u1 > 0.0) {
+        u1_0 = 1;
+    } else {
+        u1_0 = -1;
+    }
+    y = atan2(u0_0, u1_0);
+} else if (u1 == 0.0) {
+    if (u0 > 0.0) {
+        y = RT_PI / 2.0;
+    } else if (u0 < 0.0) {
+        y = -(RT_PI / 2.0);
+    } else {
+        y = 0.0;
+    }
+} else {
+    y = atan2(u0, u1);
+}
+return y;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+extern real_T rt_atan2d_snf(\
+%assign comma = ""
+%<comma>real_T u0\
+%assign comma = ", "
+%<comma>real_T u1\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 2, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function rt_powd_snf_Fcn3(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T tmp;
+real_T tmp_0;
+real_T y;
+if (rtIsNaN(u0) || rtIsNaN(u1)) {
+    y = %<LibGetMathConstant(LibRealNonFinite("nan"), FcnGetDataTypeIdFromName("double"))>;
+} else {
+    tmp = fabs(u0);
+    tmp_0 = fabs(u1);
+    if (rtIsInf(u1)) {
+        if (tmp == 1.0) {
+            y = 1.0;
+        } else if (tmp > 1.0) {
+            if (u1 > 0.0) {
+                y = %<LibGetMathConstant(LibRealNonFinite("inf"), FcnGetDataTypeIdFromName("double"))>;
+            } else {
+                y = 0.0;
+            }
+        } else if (u1 > 0.0) {
+            y = 0.0;
+        } else {
+            y = %<LibGetMathConstant(LibRealNonFinite("inf"), FcnGetDataTypeIdFromName("double"))>;
+        }
+    } else if (tmp_0 == 0.0) {
+        y = 1.0;
+    } else if (tmp_0 == 1.0) {
+        if (u1 > 0.0) {
+            y = u0;
+        } else {
+            y = 1.0 / u0;
+        }
+    } else if (u1 == 2.0) {
+        y = u0 * u0;
+    } else if ((u1 == 0.5) && (u0 >= 0.0)) {
+        y = sqrt(u0);
+    } else if ((u0 < 0.0) && (u1 > floor(u1))) {
+        y = %<LibGetMathConstant(LibRealNonFinite("nan"), FcnGetDataTypeIdFromName("double"))>;
+    } else {
+        y = pow(u0, u1);
+    }
+}
+return y;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+extern real_T rt_powd_snf(\
+%assign comma = ""
+%<comma>real_T u0\
+%assign comma = ", "
+%<comma>real_T u1\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 3, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Pla_emxInit_real_T_Fcn4(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+emxArray_real_T_AirRefueling__T *emxArray;
+int32_T i;
+*pEmxArray = (emxArray_real_T_AirRefueling__T *)malloc(sizeof(emxArray_real_T_AirRefueling__T));
+emxArray = *pEmxArray;
+emxArray->data = (real_T *)NULL;
+emxArray->numDimensions = numDimensions;
+emxArray->size = (int32_T *)malloc(sizeof(int32_T) * numDimensions);
+emxArray->allocatedSize = 0;
+emxArray->canFreeData = true;
+for (i = 0; i < numDimensions; i++) {
+    emxArray->size[i] = 0;
+}
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Pla_emxInit_real_T(\
+%assign comma = ""
+%<comma>emxArray_real_T_AirRefueling__T **pEmxArray\
+%assign comma = ", "
+%<comma>int32_T numDimensions\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 4, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platf_BaseFunction_Fcn5(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T Nik_u;
+real_T denominator_1;
+real_T denominator_1_tmp;
+real_T denominator_1_tmp_0;
+real_T denominator_2;
+%assign _modelSS = ""
+
+%if SLibCG_FcnCallArgAccessed(1,5,1,0)
+%<SLibCG_AccessArg(1 ,5, 0)>
+%endif
+%if SLibCG_FcnCallArgAccessed(1,5,1,1)
+%<SLibCG_AccessArg(1 ,5, 1)>
+%endif
+%if SLibCG_FcnCallArgAccessed(1,5,1,2)
+%<SLibCG_AccessArg(1 ,5, 2)>
+%endif
+%if SLibCG_FcnCallArgAccessed(1,5,1,3)
+%<SLibCG_AccessArg(1 ,5, 3)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,5,0,0)
+%<SLibCG_AccessArg(1 ,5, 0)>
+%endif
+%if SLibCG_FcnCallArgAccessed(1,5,0,1)
+%<SLibCG_AccessArg(1 ,5, 1)>
+%endif
+%if SLibCG_FcnCallArgAccessed(1,5,0,2)
+%<SLibCG_AccessArg(1 ,5, 2)>
+%endif
+%if SLibCG_FcnCallArgAccessed(1,5,0,3)
+%<SLibCG_AccessArg(1 ,5, 3)>
+%endif
+
+if (k == 1.0) {
+    if ((u >= NodeVector[(int32_T)i - 1]) && (u < NodeVector[(int32_T)(i + 1.0) - 1])) {
+        Nik_u = 1.0;
+    } else {
+        Nik_u = 0.0;
+    }
+} else {
+    denominator_1_tmp = i + k;
+    denominator_1_tmp_0 = NodeVector[(int32_T)i - 1];
+    denominator_1 = NodeVector[(int32_T)(denominator_1_tmp - 1.0) - 1] - denominator_1_tmp_0;
+    denominator_1_tmp = NodeVector[(int32_T)denominator_1_tmp - 1];
+    denominator_2 = denominator_1_tmp - NodeVector[(int32_T)(i + 1.0) - 1];
+    if (denominator_1 == 0.0) {
+        denominator_1 = 1.0;
+    }
+    if (denominator_2 == 0.0) {
+        denominator_2 = 1.0;
+    }
+    Nik_u = (denominator_1_tmp - u) / denominator_2 * %<(SLibCGCallSubFcn("AirRefueling_Platf_BaseFunction", ["i + 1.0", "k - 1.0", "u", "NodeVector"], 1, 5, 0))> + (u - denominator_1_tmp_0) / denominator_1 * %<(SLibCGCallSubFcn("AirRefueling_Platf_BaseFunction", ["i", "k - 1.0", "u", "NodeVector"], 1, 5, 1))>;
+}
+return Nik_u;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static real_T AirRefueling_Platf_BaseFunction(\
+%assign comma = ""
+%<comma>real_T i\
+%assign comma = ", "
+%<comma>real_T k\
+%assign comma = ", "
+%<comma>real_T u\
+%assign comma = ", "
+%<comma>const real_T NodeVector[14]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 5, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRef_emxEnsureCapacity_real_T_Fcn6(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+int32_T i;
+int32_T newNumel;
+void *newData;
+if (oldNumel < 0) {
+    oldNumel = 0;
+}
+newNumel = 1;
+for (i = 0; i < emxArray->numDimensions; i++) {
+    newNumel *= emxArray->size[i];
+}
+if (newNumel > emxArray->allocatedSize) {
+    i = emxArray->allocatedSize;
+    if (i < 16) {
+        i = 16;
+    }
+    while (i < newNumel) {
+        if (i > 1073741823) {
+            i = MAX_int32_T;
+        } else {
+            i <<= 1;
+        }
+    }
+    newData = calloc((uint32_T)i, sizeof(real_T));
+    if (emxArray->data != NULL) {
+        memcpy(newData, emxArray->data, sizeof(real_T) * oldNumel);
+        if (emxArray->canFreeData) {
+            free(emxArray->data);
+        }
+    }
+    emxArray->data = (real_T *)newData;
+    emxArray->allocatedSize = i;
+    emxArray->canFreeData = true;
+}
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRef_emxEnsureCapacity_real_T(\
+%assign comma = ""
+%<comma>emxArray_real_T_AirRefueling__T *emxArray\
+%assign comma = ", "
+%<comma>int32_T oldNumel\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 6, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Pla_emxFree_real_T_Fcn7(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+if (*pEmxArray != (emxArray_real_T_AirRefueling__T *)NULL) {
+    if (((*pEmxArray)->data != (real_T *)NULL) && (*pEmxArray)->canFreeData) {
+        free((*pEmxArray)->data);
+    }
+    free((*pEmxArray)->size);
+    free(*pEmxArray);
+    *pEmxArray = (emxArray_real_T_AirRefueling__T *)NULL;
+}
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Pla_emxFree_real_T(\
+%assign comma = ""
+%<comma>emxArray_real_T_AirRefueling__T **pEmxArray\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 7, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xnrm2_Fcn8(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T absxk;
+real_T scale;
+real_T t;
+real_T y;
+scale = 3.3121686421112381E-170;
+absxk = fabs(x[0]);
+if (absxk > 3.3121686421112381E-170) {
+    y = 1.0;
+    scale = absxk;
+} else {
+    t = absxk / 3.3121686421112381E-170;
+    y = t * t;
+}
+absxk = fabs(x[1]);
+if (absxk > scale) {
+    t = scale / absxk;
+    y = y * t * t + 1.0;
+    scale = absxk;
+} else {
+    t = absxk / scale;
+    y += t * t;
+}
+return scale * sqrt(y);
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static real_T AirRefueling_Platform_xnrm2(\
+%assign comma = ""
+%<comma>const real_T x[6]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 8, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xscal_Fcn9(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+x[0] *= a;
+x[1] *= a;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platform_xscal(\
+%assign comma = ""
+%<comma>real_T a\
+%assign comma = ", "
+%<comma>real_T x[6]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 9, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xdotc_Fcn10(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+return y[iy0] * x[1] + y[iy0 - 1] * x[0];
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static real_T AirRefueling_Platform_xdotc(\
+%assign comma = ""
+%<comma>const real_T x[6]\
+%assign comma = ", "
+%<comma>const real_T y[6]\
+%assign comma = ", "
+%<comma>int32_T iy0\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 10, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xaxpy_Fcn11(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+if (!(a == 0.0)) {
+    y[iy0 - 1] += a * y[0];
+    y[iy0] += a * y[1];
+}
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platform_xaxpy(\
+%assign comma = ""
+%<comma>real_T a\
+%assign comma = ", "
+%<comma>real_T y[6]\
+%assign comma = ", "
+%<comma>int32_T iy0\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 11, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xnrm2_d_Fcn12(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T absxk;
+real_T scale;
+real_T t;
+real_T y;
+scale = 3.3121686421112381E-170;
+absxk = fabs(x[1]);
+if (absxk > 3.3121686421112381E-170) {
+    y = 1.0;
+    scale = absxk;
+} else {
+    t = absxk / 3.3121686421112381E-170;
+    y = t * t;
+}
+absxk = fabs(x[2]);
+if (absxk > scale) {
+    t = scale / absxk;
+    y = y * t * t + 1.0;
+    scale = absxk;
+} else {
+    t = absxk / scale;
+    y += t * t;
+}
+return scale * sqrt(y);
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static real_T AirRefueling_Platform_xnrm2_d(\
+%assign comma = ""
+%<comma>const real_T x[3]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 12, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xscal_i_Fcn13(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+x[1] *= a;
+x[2] *= a;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platform_xscal_i(\
+%assign comma = ""
+%<comma>real_T a\
+%assign comma = ", "
+%<comma>real_T x[3]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 13, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xaxpy_m_Fcn14(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+if (!(a == 0.0)) {
+    y[1] += x[ix0 - 1] * a;
+}
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platform_xaxpy_m(\
+%assign comma = ""
+%<comma>real_T a\
+%assign comma = ", "
+%<comma>const real_T x[6]\
+%assign comma = ", "
+%<comma>int32_T ix0\
+%assign comma = ", "
+%<comma>real_T y[2]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 14, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xaxpy_ms_Fcn15(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+if (!(a == 0.0)) {
+    y[iy0 - 1] += a * x[1];
+}
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platform_xaxpy_ms(\
+%assign comma = ""
+%<comma>real_T a\
+%assign comma = ", "
+%<comma>const real_T x[2]\
+%assign comma = ", "
+%<comma>real_T y[6]\
+%assign comma = ", "
+%<comma>int32_T iy0\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 15, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xdotc_a_Fcn16(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+return x[0] * y[2] + x[1] * y[3];
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static real_T AirRefueling_Platform_xdotc_a(\
+%assign comma = ""
+%<comma>const real_T x[4]\
+%assign comma = ", "
+%<comma>const real_T y[4]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 16, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xaxpy_ms5_Fcn17(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+if (!(a == 0.0)) {
+    y[2] += a * y[0];
+    y[3] += a * y[1];
+}
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platform_xaxpy_ms5(\
+%assign comma = ""
+%<comma>real_T a\
+%assign comma = ", "
+%<comma>real_T y[4]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 17, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xdotc_a4_Fcn18(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+return y[iy0] * x[2] + y[iy0 - 1] * x[1];
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static real_T AirRefueling_Platform_xdotc_a4(\
+%assign comma = ""
+%<comma>const real_T x[9]\
+%assign comma = ", "
+%<comma>const real_T y[9]\
+%assign comma = ", "
+%<comma>int32_T iy0\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 18, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platfor_xaxpy_ms5c_Fcn19(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+if (!(a == 0.0)) {
+    y[iy0 - 1] += a * y[1];
+    y[iy0] += a * y[2];
+}
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platfor_xaxpy_ms5c(\
+%assign comma = ""
+%<comma>real_T a\
+%assign comma = ", "
+%<comma>real_T y[9]\
+%assign comma = ", "
+%<comma>int32_T iy0\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 19, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xscal_iw_Fcn20(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+int32_T k;
+for (k = ix0; k <= ix0 + 1; k++) {
+    x[k - 1] *= a;
+}
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platform_xscal_iw(\
+%assign comma = ""
+%<comma>real_T a\
+%assign comma = ", "
+%<comma>real_T x[4]\
+%assign comma = ", "
+%<comma>int32_T ix0\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 20, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xscal_iwr_Fcn21(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+int32_T k;
+for (k = ix0; k <= ix0 + 2; k++) {
+    x[k - 1] *= a;
+}
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platform_xscal_iwr(\
+%assign comma = ""
+%<comma>real_T a\
+%assign comma = ", "
+%<comma>real_T x[9]\
+%assign comma = ", "
+%<comma>int32_T ix0\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 21, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xswap_Fcn22(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T temp;
+temp = x[ix0 - 1];
+x[ix0 - 1] = x[iy0 - 1];
+x[iy0 - 1] = temp;
+temp = x[ix0];
+x[ix0] = x[iy0];
+x[iy0] = temp;
+temp = x[ix0 + 1];
+x[ix0 + 1] = x[iy0 + 1];
+x[iy0 + 1] = temp;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platform_xswap(\
+%assign comma = ""
+%<comma>real_T x[9]\
+%assign comma = ", "
+%<comma>int32_T ix0\
+%assign comma = ", "
+%<comma>int32_T iy0\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 22, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xswap_g_Fcn23(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T temp;
+temp = x[0];
+x[0] = x[2];
+x[2] = temp;
+temp = x[1];
+x[1] = x[3];
+x[3] = temp;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platform_xswap_g(\
+%assign comma = ""
+%<comma>real_T x[4]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 23, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xrotg_Fcn24(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T absa;
+real_T absb;
+real_T ads;
+real_T bds;
+real_T roe;
+real_T scale;
+roe = *b;
+absa = fabs(*a);
+absb = fabs(*b);
+if (absa > absb) {
+    roe = *a;
+}
+scale = absa + absb;
+if (scale == 0.0) {
+    *s = 0.0;
+    *c = 1.0;
+    *b = 0.0;
+} else {
+    ads = absa / scale;
+    bds = absb / scale;
+    scale *= sqrt(ads * ads + bds * bds);
+    if (roe < 0.0) {
+        scale = -scale;
+    }
+    *c = *a / scale;
+    *s = *b / scale;
+    if (absa > absb) {
+        *b = *s;
+    } else if (*c != 0.0) {
+        *b = 1.0 / *c;
+    } else {
+        *b = 1.0;
+    }
+}
+*a = scale;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platform_xrotg(\
+%assign comma = ""
+%<comma>real_T *a\
+%assign comma = ", "
+%<comma>real_T *b\
+%assign comma = ", "
+%<comma>real_T *c\
+%assign comma = ", "
+%<comma>real_T *s\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 24, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xrot_Fcn25(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T temp;
+real_T temp_tmp;
+temp = x[iy0 - 1];
+temp_tmp = x[ix0 - 1];
+x[iy0 - 1] = temp * c - temp_tmp * s;
+x[ix0 - 1] = temp_tmp * c + temp * s;
+temp = x[ix0] * c + x[iy0] * s;
+x[iy0] = x[iy0] * c - x[ix0] * s;
+x[ix0] = temp;
+temp = x[iy0 + 1];
+temp_tmp = x[ix0 + 1];
+x[iy0 + 1] = temp * c - temp_tmp * s;
+x[ix0 + 1] = temp_tmp * c + temp * s;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platform_xrot(\
+%assign comma = ""
+%<comma>real_T x[9]\
+%assign comma = ", "
+%<comma>int32_T ix0\
+%assign comma = ", "
+%<comma>int32_T iy0\
+%assign comma = ", "
+%<comma>real_T c\
+%assign comma = ", "
+%<comma>real_T s\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 25, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xrot_h_Fcn26(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T temp;
+real_T temp_tmp;
+temp = x[iy0 - 1];
+temp_tmp = x[ix0 - 1];
+x[iy0 - 1] = temp * c - temp_tmp * s;
+x[ix0 - 1] = temp_tmp * c + temp * s;
+temp = x[ix0] * c + x[iy0] * s;
+x[iy0] = x[iy0] * c - x[ix0] * s;
+x[ix0] = temp;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platform_xrot_h(\
+%assign comma = ""
+%<comma>real_T x[4]\
+%assign comma = ", "
+%<comma>int32_T ix0\
+%assign comma = ", "
+%<comma>int32_T iy0\
+%assign comma = ", "
+%<comma>real_T c\
+%assign comma = ", "
+%<comma>real_T s\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 26, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_svd_Fcn27(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T b_A[6];
+real_T b_s[3];
+real_T e[3];
+real_T work[2];
+real_T emm1;
+real_T nrm;
+real_T rt;
+real_T shift;
+real_T smm1;
+real_T sqds;
+real_T ztest;
+int32_T exitg1;
+int32_T i_ii;
+int32_T kase;
+int32_T m;
+int32_T q;
+int32_T qjj;
+int32_T qp1jj;
+boolean_T apply_transform;
+boolean_T exitg2;
+%assign _modelSS = ""
+
+%if SLibCG_FcnCallArgAccessed(1,27,32,0)
+%<SLibCG_AccessArg(1 ,27, 0)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,28,0)
+%<SLibCG_AccessArg(1 ,27, 1)>
+%endif
+%if SLibCG_FcnCallArgAccessed(1,27,28,1)
+%<SLibCG_AccessArg(1 ,27, 1)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,27,0)
+%<SLibCG_AccessArg(1 ,27, 1)>
+%endif
+%if SLibCG_FcnCallArgAccessed(1,27,27,1)
+%<SLibCG_AccessArg(1 ,27, 1)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,26,1)
+%<SLibCG_AccessArg(1 ,27, 3)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,25,0)
+%<SLibCG_AccessArg(1 ,27, 3)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,24,0)
+%<SLibCG_AccessArg(1 ,27, 1)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,22,0)
+%<SLibCG_AccessArg(1 ,27, 3)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,20,0)
+%<SLibCG_AccessArg(1 ,27, 1)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,18,0)
+%<SLibCG_AccessArg(1 ,27, 3)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,16,0)
+%<SLibCG_AccessArg(1 ,27, 1)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,7,0)
+%<SLibCG_AccessArg(1 ,27, 3)>
+%endif
+%if SLibCG_FcnCallArgAccessed(1,27,7,1)
+%<SLibCG_AccessArg(1 ,27, 3)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,6,0)
+%<SLibCG_AccessArg(1 ,27, 3)>
+%endif
+%if SLibCG_FcnCallArgAccessed(1,27,6,1)
+%<SLibCG_AccessArg(1 ,27, 3)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,5,0)
+%<SLibCG_AccessArg(1 ,27, 3)>
+%endif
+%if SLibCG_FcnCallArgAccessed(1,27,5,1)
+%<SLibCG_AccessArg(1 ,27, 3)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,4,0)
+%<SLibCG_AccessArg(1 ,27, 3)>
+%endif
+%if SLibCG_FcnCallArgAccessed(1,27,4,1)
+%<SLibCG_AccessArg(1 ,27, 3)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,3,1)
+%<SLibCG_AccessArg(1 ,27, 1)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,2,1)
+%<SLibCG_AccessArg(1 ,27, 3)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,1,1)
+%<SLibCG_AccessArg(1 ,27, 1)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(1,27,0,1)
+%<SLibCG_AccessArg(1 ,27, 3)>
+%endif
+
+for (m = 0; m < 6; m++) {
+    b_A[m] = A[m];
+}
+e[0] = 0.0;
+work[0] = 0.0;
+memset(&V[0], 0, 9U * sizeof(real_T));
+apply_transform = false;
+nrm = %<(SLibCGCallSubFcn("AirRefueling_Platform_xnrm2", ["A"], 1, 27, 32))>;
+if (nrm > 0.0) {
+    apply_transform = true;
+    if (A[0] < 0.0) {
+        nrm = -nrm;
+    }
+    if (fabs(nrm) >= 1.0020841800044864E-292) {
+        %<(SLibCGCallSubFcn("AirRefueling_Platform_xscal", ["1.0 / nrm", "b_A"], 1, 27, 30))>;
+    } else {
+        b_A[0] /= nrm;
+        b_A[1] /= nrm;
+    }
+    b_A[0]++;
+    b_s[0] = -nrm;
+} else {
+    b_s[0] = 0.0;
+}
+if (apply_transform) {
+    %<(SLibCGCallSubFcn("AirRefueling_Platform_xaxpy", ["-(%<(SLibCGCallSubFcn("AirRefueling_Platform_xdotc", ["b_A", "b_A", "3"], 1, 27, 14))> / b_A[0])", "b_A", "3"], 1, 27, 15))>;
+}
+e[1] = b_A[2];
+if (apply_transform) {
+    %<(SLibCGCallSubFcn("AirRefueling_Platform_xaxpy", ["-(%<(SLibCGCallSubFcn("AirRefueling_Platform_xdotc", ["b_A", "b_A", "5"], 1, 27, 12))> / b_A[0])", "b_A", "5"], 1, 27, 13))>;
+}
+e[2] = b_A[4];
+U[0] = b_A[0];
+U[1] = b_A[1];
+nrm = %<(SLibCGCallSubFcn("AirRefueling_Platform_xnrm2_d", ["e"], 1, 27, 31))>;
+if (nrm == 0.0) {
+    e[0] = 0.0;
+} else {
+    if (e[1] < 0.0) {
+        nrm = -nrm;
+    }
+    e[0] = nrm;
+    if (fabs(nrm) >= 1.0020841800044864E-292) {
+        %<(SLibCGCallSubFcn("AirRefueling_Platform_xscal_i", ["1.0 / nrm", "e"], 1, 27, 29))>;
+    } else {
+        e[1] /= nrm;
+        e[2] = b_A[4] / nrm;
+    }
+    e[1]++;
+    e[0] = -e[0];
+    work[1] = 0.0;
+    %<(SLibCGCallSubFcn("AirRefueling_Platform_xaxpy_m", ["e[1]", "b_A", "4", "work"], 1, 27, 11))>;
+    %<(SLibCGCallSubFcn("AirRefueling_Platform_xaxpy_m", ["e[2]", "b_A", "6", "work"], 1, 27, 10))>;
+    %<(SLibCGCallSubFcn("AirRefueling_Platform_xaxpy_ms", ["-e[1] / e[1]", "work", "b_A", "4"], 1, 27, 9))>;
+    %<(SLibCGCallSubFcn("AirRefueling_Platform_xaxpy_ms", ["-e[2] / e[1]", "work", "b_A", "6"], 1, 27, 8))>;
+}
+b_s[1] = b_A[3];
+b_s[2] = 0.0;
+V[1] = e[1];
+U[2] = 0.0;
+V[2] = e[2];
+m = 1;
+U[3] = 1.0;
+if (b_s[0] != 0.0) {
+    %<(SLibCGCallSubFcn("AirRefueling_Platform_xaxpy_ms5", ["-(%<(SLibCGCallSubFcn("AirRefueling_Platform_xdotc_a", ["U", "U"], 1, 27, 27))> / U[0])", "U"], 1, 27, 28))>;
+    U[0] = -U[0];
+    U[1] = -U[1];
+    U[0]++;
+} else {
+    U[1] = 0.0;
+    U[0] = 1.0;
+}
+for (qjj = 2; qjj >= 0; qjj--) {
+    if ((qjj + 1 <= 1) && (e[0] != 0.0)) {
+        %<(SLibCGCallSubFcn("AirRefueling_Platfor_xaxpy_ms5c", ["-(%<(SLibCGCallSubFcn("AirRefueling_Platform_xdotc_a4", ["V", "V", "5"], 1, 27, 6))> / V[1])", "V", "5"], 1, 27, 7))>;
+        %<(SLibCGCallSubFcn("AirRefueling_Platfor_xaxpy_ms5c", ["-(%<(SLibCGCallSubFcn("AirRefueling_Platform_xdotc_a4", ["V", "V", "8"], 1, 27, 4))> / V[1])", "V", "8"], 1, 27, 5))>;
+    }
+    V[3 * qjj] = 0.0;
+    V[3 * qjj + 1] = 0.0;
+    V[3 * qjj + 2] = 0.0;
+    V[qjj + 3 * qjj] = 1.0;
+}
+ztest = e[0];
+if (b_s[0] != 0.0) {
+    rt = fabs(b_s[0]);
+    nrm = b_s[0] / rt;
+    b_s[0] = rt;
+    ztest = e[0] / nrm;
+    %<(SLibCGCallSubFcn("AirRefueling_Platform_xscal_iw", ["nrm", "U", "1"], 1, 27, 3))>;
+}
+if (ztest != 0.0) {
+    rt = fabs(ztest);
+    nrm = rt / ztest;
+    ztest = rt;
+    b_s[1] = b_A[3] * nrm;
+    %<(SLibCGCallSubFcn("AirRefueling_Platform_xscal_iwr", ["nrm", "V", "4"], 1, 27, 2))>;
+}
+e[0] = ztest;
+ztest = b_A[5];
+if (b_s[1] != 0.0) {
+    rt = fabs(b_s[1]);
+    nrm = b_s[1] / rt;
+    b_s[1] = rt;
+    ztest = b_A[5] / nrm;
+    %<(SLibCGCallSubFcn("AirRefueling_Platform_xscal_iw", ["nrm", "U", "3"], 1, 27, 1))>;
+}
+if (ztest != 0.0) {
+    rt = fabs(ztest);
+    nrm = rt / ztest;
+    ztest = rt;
+    b_s[2] = 0.0 * nrm;
+    %<(SLibCGCallSubFcn("AirRefueling_Platform_xscal_iwr", ["nrm", "V", "7"], 1, 27, 0))>;
+}
+e[1] = ztest;
+if (b_s[2] != 0.0) {
+    b_s[2] = %<LibGetMathConstant(LibRealNonFinite("nan"), FcnGetDataTypeIdFromName("double"))>;
+}
+e[2] = 0.0;
+qjj = 0;
+if ((b_s[0] > e[0]) || rtIsNaN(e[0])) {
+    nrm = b_s[0];
+} else {
+    nrm = e[0];
+}
+if ((b_s[1] > ztest) || rtIsNaN(ztest)) {
+    ztest = b_s[1];
+}
+if ((!(nrm > ztest)) && (!rtIsNaN(ztest))) {
+    nrm = ztest;
+}
+while ((m + 2 > 0) && (qjj < 75)) {
+    kase = m + 1;
+    do {
+        exitg1 = 0;
+        q = kase;
+        if (kase == 0) {
+            exitg1 = 1;
+        } else {
+            rt = fabs(e[kase - 1]);
+            if ((rt <= (fabs(b_s[kase - 1]) + fabs(b_s[kase])) * 2.2204460492503131E-16) || ((rt <= 1.0020841800044864E-292) || ((qjj > 20) && (rt <= 2.2204460492503131E-16 * nrm)))) {
+                e[kase - 1] = 0.0;
+                exitg1 = 1;
+            } else {
+                kase--;
+            }
+        }
+    } while (exitg1 == 0);
+    if (m + 1 == kase) {
+        kase = 4;
+    } else {
+        qp1jj = m + 2;
+        i_ii = m + 2;
+        exitg2 = false;
+        while ((!exitg2) && (i_ii >= kase)) {
+            qp1jj = i_ii;
+            if (i_ii == kase) {
+                exitg2 = true;
+            } else {
+                rt = 0.0;
+                if (i_ii < m + 2) {
+                    rt = fabs(e[i_ii - 1]);
+                }
+                if (i_ii > kase + 1) {
+                    rt += fabs(e[i_ii - 2]);
+                }
+                ztest = fabs(b_s[i_ii - 1]);
+                if ((ztest <= 2.2204460492503131E-16 * rt) || (ztest <= 1.0020841800044864E-292)) {
+                    b_s[i_ii - 1] = 0.0;
+                    exitg2 = true;
+                } else {
+                    i_ii--;
+                }
+            }
+        }
+        if (qp1jj == kase) {
+            kase = 3;
+        } else if (m + 2 == qp1jj) {
+            kase = 1;
+        } else {
+            kase = 2;
+            q = qp1jj;
+        }
+    }
+    switch (kase) {
+      case 1:
+        rt = e[m];
+        e[m] = 0.0;
+        for (qp1jj = m; qp1jj + 1 >= q + 1; qp1jj--) {
+            %<(SLibCGCallSubFcn("AirRefueling_Platform_xrotg", ["&b_s[qp1jj]", "&rt", "&ztest", "&sqds"], 1, 27, 23))>;
+            if (qp1jj + 1 > q + 1) {
+                rt = -sqds * e[0];
+                e[0] *= ztest;
+            }
+            %<(SLibCGCallSubFcn("AirRefueling_Platform_xrot", ["V", "3 * qp1jj + 1", "3 * (m + 1) + 1", "ztest", "sqds"], 1, 27, 22))>;
+        }
+        break;
+      case 2:
+        rt = e[q - 1];
+        e[q - 1] = 0.0;
+        for (qp1jj = q; qp1jj < m + 2; qp1jj++) {
+            %<(SLibCGCallSubFcn("AirRefueling_Platform_xrotg", ["&b_s[qp1jj]", "&rt", "&ztest", "&sqds"], 1, 27, 21))>;
+            rt = -sqds * e[qp1jj];
+            e[qp1jj] *= ztest;
+            %<(SLibCGCallSubFcn("AirRefueling_Platform_xrot_h", ["U", "(qp1jj << 1) + 1", "((q - 1) << 1) + 1", "ztest", "sqds"], 1, 27, 20))>;
+        }
+        break;
+      case 3:
+        rt = b_s[m + 1];
+        ztest = fabs(rt);
+        sqds = fabs(b_s[m]);
+        if ((ztest > sqds) || rtIsNaN(sqds)) {
+            sqds = ztest;
+        }
+        ztest = fabs(e[m]);
+        if ((sqds > ztest) || rtIsNaN(ztest)) {
+            ztest = sqds;
+        }
+        sqds = fabs(b_s[q]);
+        if ((ztest > sqds) || rtIsNaN(sqds)) {
+            sqds = ztest;
+        }
+        ztest = fabs(e[q]);
+        if ((sqds > ztest) || rtIsNaN(ztest)) {
+            ztest = sqds;
+        }
+        rt /= ztest;
+        smm1 = b_s[m] / ztest;
+        emm1 = e[m] / ztest;
+        sqds = b_s[q] / ztest;
+        smm1 = ((smm1 + rt) * (smm1 - rt) + emm1 * emm1) / 2.0;
+        emm1 *= rt;
+        emm1 *= emm1;
+        if ((smm1 != 0.0) || (emm1 != 0.0)) {
+            shift = sqrt(smm1 * smm1 + emm1);
+            if (smm1 < 0.0) {
+                shift = -shift;
+            }
+            shift = emm1 / (smm1 + shift);
+        } else {
+            shift = 0.0;
+        }
+        rt = (sqds + rt) * (sqds - rt) + shift;
+        ztest = e[q] / ztest * sqds;
+        for (qp1jj = q + 1; qp1jj <= m + 1; qp1jj++) {
+            %<(SLibCGCallSubFcn("AirRefueling_Platform_xrotg", ["&rt", "&ztest", "&sqds", "&smm1"], 1, 27, 19))>;
+            if (qp1jj > q + 1) {
+                e[0] = rt;
+            }
+            ztest = e[qp1jj - 1];
+            emm1 = b_s[qp1jj - 1];
+            rt = emm1 * sqds + ztest * smm1;
+            e[qp1jj - 1] = ztest * sqds - emm1 * smm1;
+            ztest = smm1 * b_s[qp1jj];
+            b_s[qp1jj] *= sqds;
+            %<(SLibCGCallSubFcn("AirRefueling_Platform_xrot", ["V", "3 * (qp1jj - 1) + 1", "3 * qp1jj + 1", "sqds", "smm1"], 1, 27, 18))>;
+            %<(SLibCGCallSubFcn("AirRefueling_Platform_xrotg", ["&rt", "&ztest", "&sqds", "&smm1"], 1, 27, 17))>;
+            b_s[qp1jj - 1] = rt;
+            rt = e[qp1jj - 1] * sqds + smm1 * b_s[qp1jj];
+            b_s[qp1jj] = e[qp1jj - 1] * -smm1 + sqds * b_s[qp1jj];
+            ztest = smm1 * e[qp1jj];
+            e[qp1jj] *= sqds;
+            if (qp1jj < 2) {
+                %<(SLibCGCallSubFcn("AirRefueling_Platform_xrot_h", ["U", "1", "3", "sqds", "smm1"], 1, 27, 16))>;
+            }
+        }
+        e[m] = rt;
+        qjj++;
+        break;
+      default:
+        if (b_s[q] < 0.0) {
+            b_s[q] = -b_s[q];
+            %<(SLibCGCallSubFcn("AirRefueling_Platform_xscal_iwr", ["-1.0", "V", "3 * q + 1"], 1, 27, 26))>;
+        }
+        qjj = q + 1;
+        while ((q + 1 < 3) && (b_s[q] < b_s[qjj])) {
+            rt = b_s[q];
+            b_s[q] = b_s[qjj];
+            b_s[qjj] = rt;
+            %<(SLibCGCallSubFcn("AirRefueling_Platform_xswap", ["V", "3 * q + 1", "3 * (q + 1) + 1"], 1, 27, 25))>;
+            if (q + 1 < 2) {
+                %<(SLibCGCallSubFcn("AirRefueling_Platform_xswap_g", ["U"], 1, 27, 24))>;
+            }
+            q = qjj;
+            qjj++;
+        }
+        qjj = 0;
+        m--;
+        break;
+    }
+}
+s[0] = b_s[0];
+s[1] = b_s[1];
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefueling_Platform_svd(\
+%assign comma = ""
+%<comma>const real_T A[6]\
+%assign comma = ", "
+%<comma>real_T U[4]\
+%assign comma = ", "
+%<comma>real_T s[2]\
+%assign comma = ", "
+%<comma>real_T V[9]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 27, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_norm_Fcn28(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T absxk;
+real_T scale;
+real_T t;
+real_T y;
+scale = 3.3121686421112381E-170;
+absxk = fabs(x[0]);
+if (absxk > 3.3121686421112381E-170) {
+    y = 1.0;
+    scale = absxk;
+} else {
+    t = absxk / 3.3121686421112381E-170;
+    y = t * t;
+}
+absxk = fabs(x[1]);
+if (absxk > scale) {
+    t = scale / absxk;
+    y = y * t * t + 1.0;
+    scale = absxk;
+} else {
+    t = absxk / scale;
+    y += t * t;
+}
+absxk = fabs(x[2]);
+if (absxk > scale) {
+    t = scale / absxk;
+    y = y * t * t + 1.0;
+    scale = absxk;
+} else {
+    t = absxk / scale;
+    y += t * t;
+}
+return scale * sqrt(y);
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static real_T AirRefueling_Platform_norm(\
+%assign comma = ""
+%<comma>const real_T x[3]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 28, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefueling_Platform_xgetrfs_Fcn29(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T smax;
+real_T y;
+int32_T c_ix;
+int32_T d;
+int32_T ijA;
+int32_T info;
+int32_T ix;
+int32_T iy;
+int32_T j;
+int32_T jA;
+int32_T kAcol;
+int8_T ipiv[10];
+int8_T ipiv_0;
+for (j = 0; j < 10; j++) {
+    ipiv[j] = (int8_T)(j + 1);
+}
+info = 0;
+for (j = 0; j < 9; j++) {
+    kAcol = j * 11;
+    jA = 0;
+    ix = kAcol;
+    smax = fabs(A[kAcol]);
+    for (iy = 2; iy <= 10 - j; iy++) {
+        ix++;
+        y = fabs(A[ix]);
+        if (y > smax) {
+            jA = iy - 1;
+            smax = y;
+        }
+    }
+    if (A[kAcol + jA] != 0.0) {
+        if (jA != 0) {
+            iy = j + jA;
+            ipiv[j] = (int8_T)(iy + 1);
+            ix = j;
+            for (jA = 0; jA < 10; jA++) {
+                smax = A[ix];
+                A[ix] = A[iy];
+                A[iy] = smax;
+                ix += 10;
+                iy += 10;
+            }
+        }
+        jA = (kAcol - j) + 10;
+        for (ix = kAcol + 1; ix < jA; ix++) {
+            A[ix] /= A[kAcol];
+        }
+    } else {
+        info = j + 1;
+    }
+    jA = kAcol;
+    ix = kAcol + 10;
+    for (iy = 0; iy <= 8 - j; iy++) {
+        if (A[ix] != 0.0) {
+            smax = -A[ix];
+            c_ix = kAcol + 1;
+            d = (jA - j) + 20;
+            for (ijA = jA + 11; ijA < d; ijA++) {
+                A[ijA] += A[c_ix] * smax;
+                c_ix++;
+            }
+        }
+        ix += 10;
+        jA += 10;
+    }
+}
+if ((info == 0) && (!(A[99] != 0.0))) {
+    info = 10;
+}
+for (j = 0; j < 9; j++) {
+    ipiv_0 = ipiv[j];
+    if (j + 1 != ipiv_0) {
+        smax = B[j];
+        B[j] = B[ipiv_0 - 1];
+        B[ipiv_0 - 1] = smax;
+    }
+}
+for (j = 0; j < 10; j++) {
+    kAcol = 10 * j;
+    if (B[j] != 0.0) {
+        for (jA = j + 1; jA + 1 < 11; jA++) {
+            B[jA] -= A[jA + kAcol] * B[j];
+        }
+    }
+}
+for (j = 9; j >= 0; j--) {
+    kAcol = 10 * j;
+    if (B[j] != 0.0) {
+        B[j] /= A[j + kAcol];
+        for (jA = 0; jA < j; jA++) {
+            B[jA] -= A[jA + kAcol] * B[j];
+        }
+    }
+}
+return info;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static int32_T AirRefueling_Platform_xgetrfs(\
+%assign comma = ""
+%<comma>real_T A[100]\
+%assign comma = ", "
+%<comma>real_T B[10]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 29, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function AirRefuel_TankerVortexWindField_Fcn30(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T TVorT;
+real_T TVorW;
+real_T rVorCoreL;
+real_T rVorCoreR;
+real_T rVorCoreRT;
+real_T rVorCoreRT_tmp;
+real_T rVorCoreT;
+real_T rVorCoreW;
+real_T rVorL;
+real_T tVorL;
+real_T tVorR;
+real_T tVorRT;
+real_T tVorT;
+real_T tVorW;
+real_T vVorT;
+real_T vVorW;
+rVorCoreW = PosReceiver[2] * PosReceiver[2];
+rVorCoreRT = sqrt((PosReceiver[1] - -20.0) * (PosReceiver[1] - -20.0) + rVorCoreW);
+tVorT = -PosReceiver[0] / 120.0;
+rVorCoreL = sqrt(fabs(21.154437663412029 * tVorT)) * 2.24;
+rVorL = rVorCoreRT * rVorCoreRT;
+rVorL = 352.57396105686718 * rVorCoreRT / ((rVorL + rVorCoreL * rVorCoreL) * 6.2831853071795862) * (1.0 - exp(-rVorL / (84.617750653648116 * tVorT)));
+tVorRT = atan(PosReceiver[2] / (PosReceiver[1] - -20.0));
+tVorL = tVorRT;
+if (tVorRT < 0.0) {
+    tVorL = tVorRT + 3.1415926535897931;
+}
+rVorCoreL = sqrt((PosReceiver[1] - 20.0) * (PosReceiver[1] - 20.0) + rVorCoreW);
+rVorCoreR = sqrt(fabs(21.154437663412029 * tVorT)) * 2.24;
+tVorR = rVorCoreL * rVorCoreL;
+rVorCoreL = 352.57396105686718 * rVorCoreL / ((tVorR + rVorCoreR * rVorCoreR) * 6.2831853071795862) * (1.0 - exp(-tVorR / (84.617750653648116 * tVorT)));
+tVorR = atan(PosReceiver[2] / (-PosReceiver[1] + 20.0));
+if (-PosReceiver[1] + 20.0 < 0.0) {
+    tVorR += 3.1415926535897931;
+}
+tVorW = PosReceiver[0] * PosReceiver[0];
+rVorCoreR = sqrt(tVorW + rVorCoreW);
+TVorW = ((PosReceiver[1] - -15.707963267948966) / sqrt(((PosReceiver[1] - -15.707963267948966) * (PosReceiver[1] - -15.707963267948966) + tVorW) + rVorCoreW) + (-PosReceiver[1] + 15.707963267948966) / sqrt(((PosReceiver[1] - 15.707963267948966) * (PosReceiver[1] - 15.707963267948966) + tVorW) + rVorCoreW)) * 352.57396105686718 / 2.0 * 4.0 / 3.1415926535897931;
+vVorW = 0.06 * TVorW;
+rVorCoreW = sqrt(fabs(vVorW * tVorT)) * 2.24;
+tVorW = rVorCoreR * rVorCoreR;
+rVorCoreR = TVorW * rVorCoreR / ((tVorW + rVorCoreW * rVorCoreW) * 6.2831853071795862) * (1.0 - exp(-tVorW / (4.0 * vVorW * tVorT)));
+tVorW = atan(PosReceiver[2] / -PosReceiver[0]);
+if (-PosReceiver[0] < 0.0) {
+    tVorW += 3.1415926535897931;
+}
+rVorCoreW = sqrt(fabs(0.70514792211373434 * tVorT)) * 2.24;
+TVorW = rVorCoreRT * rVorCoreRT;
+TVorW = 11.752465368562239 * rVorCoreRT / ((TVorW + rVorCoreW * rVorCoreW) * 6.2831853071795862) * (1.0 - exp(-TVorW / (2.8205916884549374 * tVorT)));
+vVorW = tVorRT;
+if (PosReceiver[1] - -20.0 < 0.0) {
+    vVorW = tVorRT + 3.1415926535897931;
+}
+TVorT = (PosReceiver[2] - -1.27) * (PosReceiver[2] - -1.27);
+rVorCoreW = sqrt((PosReceiver[1] - 6.515) * (PosReceiver[1] - 6.515) + TVorT);
+rVorCoreRT = sqrt(fabs(0.70514792211373434 * tVorT)) * 2.24;
+tVorRT = rVorCoreW * rVorCoreW;
+rVorCoreW = 11.752465368562239 * rVorCoreW / ((tVorRT + rVorCoreRT * rVorCoreRT) * 6.2831853071795862) * (1.0 - exp(-tVorRT / (2.8205916884549374 * tVorT)));
+tVorRT = atan((PosReceiver[2] - -1.27) / (-PosReceiver[1] + 6.515));
+if (-PosReceiver[1] + 6.515 < 0.0) {
+    tVorRT += 3.1415926535897931;
+}
+rVorCoreRT_tmp = (PosReceiver[0] - -12.44) * (PosReceiver[0] - -12.44);
+rVorCoreRT = sqrt(rVorCoreRT_tmp + TVorT);
+TVorT = ((PosReceiver[1] - -5.1168690345343757) / sqrt((rVorCoreRT_tmp + (PosReceiver[1] - -5.1168690345343757) * (PosReceiver[1] - -5.1168690345343757)) + TVorT) + (-PosReceiver[1] + 5.1168690345343757) / sqrt((rVorCoreRT_tmp + (PosReceiver[1] - 5.1168690345343757) * (PosReceiver[1] - 5.1168690345343757)) + TVorT)) * 11.752465368562239 / 2.0 * 4.0 / 3.1415926535897931;
+vVorT = 0.06 * TVorT;
+rVorCoreT = sqrt(fabs(vVorT * tVorT)) * 2.24;
+rVorCoreRT_tmp = rVorCoreRT * rVorCoreRT;
+rVorCoreRT = TVorT * rVorCoreRT / ((rVorCoreRT_tmp + rVorCoreT * rVorCoreT) * 6.2831853071795862) * (1.0 - exp(-rVorCoreRT_tmp / (4.0 * vVorT * tVorT)));
+tVorT = atan((PosReceiver[2] - -1.27) / (-PosReceiver[0] + -12.44));
+if (-PosReceiver[0] + -12.44 < 0.0) {
+    tVorT += 3.1415926535897931;
+}
+y[0] = rVorCoreR * sin(tVorW) + -rVorCoreRT * sin(tVorT);
+y[1] = ((-rVorL * sin(tVorL) + rVorCoreL * sin(tVorR)) + TVorW * sin(vVorW)) + -rVorCoreW * sin(tVorRT);
+y[2] = ((((rVorL * cos(tVorL) + rVorCoreL * cos(tVorR)) + rVorCoreR * cos(tVorW)) + -TVorW * cos(vVorW)) + -rVorCoreW * cos(tVorRT)) + -rVorCoreRT * cos(tVorT);
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefuel_TankerVortexWindField(\
+%assign comma = ""
+%<comma>const real_T PosReceiver[3]\
+%assign comma = ", "
+%<comma>real_T y[3]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 30, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function rt_mrdivide_U1d1x3_U2d_9vOrDY9Z_Fcn31(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T A[9];
+real_T a21;
+real_T maxval;
+int32_T r1;
+int32_T r2;
+int32_T r3;
+int32_T rtemp;
+memcpy(&A[0], &u1[0], 9U * sizeof(real_T));
+r1 = 0;
+r2 = 1;
+r3 = 2;
+maxval = fabs(u1[0]);
+a21 = fabs(u1[1]);
+if (a21 > maxval) {
+    maxval = a21;
+    r1 = 1;
+    r2 = 0;
+}
+if (fabs(u1[2]) > maxval) {
+    r1 = 2;
+    r2 = 1;
+    r3 = 0;
+}
+A[r2] = u1[r2] / u1[r1];
+A[r3] /= A[r1];
+A[r2 + 3] -= A[r1 + 3] * A[r2];
+A[r3 + 3] -= A[r1 + 3] * A[r3];
+A[r2 + 6] -= A[r1 + 6] * A[r2];
+A[r3 + 6] -= A[r1 + 6] * A[r3];
+if (fabs(A[r3 + 3]) > fabs(A[r2 + 3])) {
+    rtemp = r2 + 1;
+    r2 = r3;
+    r3 = rtemp - 1;
+}
+A[r3 + 3] /= A[r2 + 3];
+A[r3 + 6] -= A[r3 + 3] * A[r2 + 6];
+y[r1] = u0[0] / A[r1];
+y[r2] = u0[1] - A[r1 + 3] * y[r1];
+y[r3] = u0[2] - A[r1 + 6] * y[r1];
+y[r2] /= A[r2 + 3];
+y[r3] -= A[r2 + 6] * y[r2];
+y[r3] /= A[r3 + 6];
+y[r2] -= A[r3 + 3] * y[r3];
+y[r1] -= y[r3] * A[r3];
+y[r1] -= y[r2] * A[r2];
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+extern void rt_mrdivide_U1d1x3_U2d_9vOrDY9Z(\
+%assign comma = ""
+%<comma>const real_T u0[3]\
+%assign comma = ", "
+%<comma>const real_T u1[9]\
+%assign comma = ", "
+%<comma>real_T y[3]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 31, fcnProtoType)>
+%return fcnBuff
+%endfunction
+

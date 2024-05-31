@@ -1,0 +1,56 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   5 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "aa"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "AirRefueling_Platform:537:364-366"\
+      Dimensions   [9]\
+    }\
+    ChartData {\
+      Name         "tt"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "AirRefueling_Platform:537:500-502"\
+    }\
+    ChartData {\
+      Name         "t_dock"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "AirRefueling_Platform:537:576-582"\
+    }\
+    ChartData {\
+      Name         "nn"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "AirRefueling_Platform:537:754-756"\
+      Dimensions   [3]\
+    }\
+    ChartData {\
+      Name         "dx"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "AirRefueling_Platform:537:818-820"\
+      Dimensions   [3]\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

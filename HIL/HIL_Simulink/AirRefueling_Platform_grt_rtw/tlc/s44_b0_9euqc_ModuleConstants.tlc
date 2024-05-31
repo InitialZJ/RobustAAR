@@ -1,0 +1,11 @@
+%implements s44_b0_9euqc_ModuleConstants "C"
+
+%function ModuleConstants(block) Output
+
+
+/* Named constants for MATLAB Function: '<S16>/MATLAB Function2' */
+#define AirRefueling_Platform_l1 (2.0)
+
+/* Named constants for MATLAB Function: '<S21>/MATLAB Function4' */
+#define AirRefueling_Platform_l0 (1.4444444444444444)
+%endfunction

@@ -1,0 +1,41 @@
+%implements s44_b0_9euqc_0_SystemReset "C"
+
+%function SystemReset(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+/* InitializeConditions for Integrator: '<S44>/Distance into Gust (x) (Limited to gust length d) ' */
+localX->DistanceintoGustxLimitedtogustl = localP->DistanceintoGustxLimitedtogustl;
+%closefile cfgTxt
+%<cfgTxt>
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[0].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("SystemReset", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "SystemReset"))
+%<SLibCG_AccessArg(0, 1, 0)>
+%endif
+%if SLibCG_ArgAccessed(0, 1, 0)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "SystemReset", rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "SystemReset"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface)) ||...
+(GenerateClassInterface && SLibIsMultiInstanceServer(rtmArgSys))
+%<SLibCG_UndoAccessArg(0, 1, 0)>
+%endif
+%endfunction
+%function SystemResetFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Air_Distanceintogusty_Reset(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(0, 1, 0)
+%<comma>%<::tSimStructType> * const %<::tSimStruct>\
+%assign comma = ", "
+%assign rtmArgSys = SLibGetModuleFileNameOwnerSystemIdx(0)
+%assign sourceFile = SLibGetFullFileNameForSystemCode("sys_fcn_defn", rtmArgSys)
+%<SLibUpdateLocalSymbolTableForFile(sourceFile, SLibGetFcnDefinitionRTMSymbolName())>\
+%endif
+%<comma>P_Distanceintogusty_AirRefuel_T *localP\
+%assign comma = ", "
+%<comma>X_Distanceintogusty_AirRefuel_T *localX\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 1, fcnProtoType)>
+%endfunction

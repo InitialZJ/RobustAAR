@@ -1,0 +1,791 @@
+%implements s44_b0_9euqc_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+char_T *sErr;
+%closefile localVarDecl
+%assign tlcSetupRuntimeResourcesFcnOfS43B215 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 215, 1, 32, 0)
+%assign tlcSetupRuntimeResourcesFcnOfS43B216 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 216, 1, 32, 1)
+%assign tlcSetupRuntimeResourcesFcnOfS43B217 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 217, 1, 32, 2)
+%assign tlcSetupRuntimeResourcesFcnOfS43B218 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 218, 1, 32, 3)
+%assign tlcSetupRuntimeResourcesFcnOfS43B219 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 219, 1, 32, 4)
+%assign tlcSetupRuntimeResourcesFcnOfS43B220 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 220, 1, 32, 5)
+%assign tlcSetupRuntimeResourcesFcnOfS43B221 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 221, 1, 32, 6)
+%assign tlcSetupRuntimeResourcesFcnOfS43B222 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 222, 1, 32, 7)
+%assign tlcSetupRuntimeResourcesFcnOfS43B223 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 223, 1, 32, 8)
+%assign tlcSetupRuntimeResourcesFcnOfS43B224 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 224, 1, 32, 9)
+%assign tlcSetupRuntimeResourcesFcnOfS43B225 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 225, 1, 32, 10)
+%assign tlcSetupRuntimeResourcesFcnOfS43B226 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 226, 1, 32, 11)
+%assign tlcSetupRuntimeResourcesFcnOfS43B227 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 227, 1, 32, 12)
+%assign tlcSetupRuntimeResourcesFcnOfS43B228 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 228, 1, 32, 13)
+%assign tlcSetupRuntimeResourcesFcnOfS43B229 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 229, 1, 32, 14)
+%assign tlcSetupRuntimeResourcesFcnOfS43B230 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 230, 1, 32, 15)
+%assign tlcSetupRuntimeResourcesFcnOfS43B231 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 231, 1, 32, 16)
+%assign tlcSetupRuntimeResourcesFcnOfS43B232 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 232, 1, 32, 17)
+%assign tlcSetupRuntimeResourcesFcnOfS43B233 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 233, 1, 32, 18)
+%assign tlcSetupRuntimeResourcesFcnOfS43B234 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 234, 1, 32, 19)
+%assign tlcSetupRuntimeResourcesFcnOfS43B235 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 235, 1, 32, 20)
+%assign tlcSetupRuntimeResourcesFcnOfS43B236 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 236, 1, 32, 21)
+%assign tlcSetupRuntimeResourcesFcnOfS43B237 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 237, 1, 32, 22)
+%assign tlcSetupRuntimeResourcesFcnOfS43B238 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 238, 1, 32, 23)
+%assign tlcSetupRuntimeResourcesFcnOfS43B239 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 239, 1, 32, 24)
+%assign tlcSetupRuntimeResourcesFcnOfS43B240 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 240, 1, 32, 25)
+%assign tlcSetupRuntimeResourcesFcnOfS43B241 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 241, 1, 32, 26)
+%assign tlcSetupRuntimeResourcesFcnOfS43B242 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 242, 1, 32, 27)
+%assign tlcSetupRuntimeResourcesFcnOfS43B243 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 243, 1, 32, 28)
+%assign tlcSetupRuntimeResourcesFcnOfS43B244 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 244, 1, 32, 29)
+%assign tlcSetupRuntimeResourcesFcnOfS43B245 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 245, 1, 32, 30)
+%assign tlcSetupRuntimeResourcesFcnOfS43B246 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 246, 1, 32, 31)
+%assign tlcSetupRuntimeResourcesFcnOfS43B247 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 247, 1, 32, 32)
+%assign tlcSetupRuntimeResourcesFcnOfS43B248 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 248, 1, 32, 33)
+%assign tlcSetupRuntimeResourcesFcnOfS43B14 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 14, 1, 32, 34)
+%assign tlcSetupRuntimeResourcesFcnOfS43B15 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 15, 1, 32, 35)
+%assign tlcSetupRuntimeResourcesFcnOfS43B95 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 95, 1, 32, 36)
+%assign tlcSetupRuntimeResourcesFcnOfS43B96 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 96, 1, 32, 37)
+%assign tlcSetupRuntimeResourcesFcnOfS43B97 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 97, 1, 32, 38)
+%assign tlcSetupRuntimeResourcesFcnOfS43B98 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 98, 1, 32, 39)
+%assign tlcSetupRuntimeResourcesFcnOfS43B99 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 99, 1, 32, 40)
+%assign tlcSetupRuntimeResourcesFcnOfS43B100 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 100, 1, 32, 41)
+%assign tlcSetupRuntimeResourcesFcnOfS43B101 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 101, 1, 32, 42)
+%assign tlcSetupRuntimeResourcesFcnOfS43B102 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 102, 1, 32, 43)
+%assign tlcSetupRuntimeResourcesFcnOfS43B103 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 103, 1, 32, 44)
+%assign tlcSetupRuntimeResourcesFcnOfS43B104 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 104, 1, 32, 45)
+%assign tlcSetupRuntimeResourcesFcnOfS43B111 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 111, 1, 32, 46)
+%assign tlcSetupRuntimeResourcesFcnOfS43B112 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 112, 1, 32, 47)
+%assign tlcSetupRuntimeResourcesFcnOfS43B115 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 115, 1, 32, 48)
+%assign tlcSetupRuntimeResourcesFcnOfS43B129 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 129, 1, 32, 49)
+%assign tlcSetupRuntimeResourcesFcnOfS43B130 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 130, 1, 32, 50)
+%assign tlcSetupRuntimeResourcesFcnOfS43B131 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 131, 1, 32, 51)
+%assign tlcSetupRuntimeResourcesFcnOfS43B132 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 132, 1, 32, 52)
+%assign tlcSetupRuntimeResourcesFcnOfS43B133 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 133, 1, 32, 53)
+%assign tlcSetupRuntimeResourcesFcnOfS43B134 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 134, 1, 32, 54)
+%assign tlcSetupRuntimeResourcesFcnOfS43B135 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 135, 1, 32, 55)
+%assign tlcSetupRuntimeResourcesFcnOfS43B136 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 136, 1, 32, 56)
+%assign tlcSetupRuntimeResourcesFcnOfS43B137 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 137, 1, 32, 57)
+%assign tlcSetupRuntimeResourcesFcnOfS43B138 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 138, 1, 32, 58)
+%assign tlcSetupRuntimeResourcesFcnOfS43B140 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 140, 1, 32, 59)
+%assign tlcSetupRuntimeResourcesFcnOfS43B142 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 142, 1, 32, 60)
+%assign tlcSetupRuntimeResourcesFcnOfS43B143 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 143, 1, 32, 61)
+%assign tlcSetupRuntimeResourcesFcnOfS43B144 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 144, 1, 32, 62)
+%assign tlcSetupRuntimeResourcesFcnOfS43B145 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 145, 1, 32, 63)
+%assign tlcSetupRuntimeResourcesFcnOfS43B146 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 146, 1, 32, 64)
+%assign tlcSetupRuntimeResourcesFcnOfS43B147 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 147, 1, 32, 65)
+%assign tlcSetupRuntimeResourcesFcnOfS43B148 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 148, 1, 32, 66)
+%assign tlcSetupRuntimeResourcesFcnOfS43B149 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 149, 1, 32, 67)
+%assign tlcSetupRuntimeResourcesFcnOfS43B150 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 150, 1, 32, 68)
+%assign tlcSetupRuntimeResourcesFcnOfS43B151 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 151, 1, 32, 69)
+%assign tlcSetupRuntimeResourcesFcnOfS43B152 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 152, 1, 32, 70)
+%assign tlcSetupRuntimeResourcesFcnOfS43B153 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 153, 1, 32, 71)
+%assign tlcSetupRuntimeResourcesFcnOfS43B154 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 154, 1, 32, 72)
+%assign tlcSetupRuntimeResourcesFcnOfS43B155 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 155, 1, 32, 73)
+%assign tlcSetupRuntimeResourcesFcnOfS43B156 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 156, 1, 32, 74)
+%assign tlcSetupRuntimeResourcesFcnOfS43B157 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 157, 1, 32, 75)
+%assign tlcSetupRuntimeResourcesFcnOfS43B169 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 169, 1, 32, 76)
+%assign tlcSetupRuntimeResourcesFcnOfS43B170 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 170, 1, 32, 77)
+%assign tlcSetupRuntimeResourcesFcnOfS43B171 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 171, 1, 32, 78)
+%assign tlcSetupRuntimeResourcesFcnOfS43B172 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 172, 1, 32, 79)
+%assign tlcSetupRuntimeResourcesFcnOfS43B173 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 173, 1, 32, 80)
+%assign tlcSetupRuntimeResourcesFcnOfS43B179 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 179, 1, 32, 81)
+%assign tlcSetupRuntimeResourcesFcnOfS43B180 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 180, 1, 32, 82)
+%assign tlcSetupRuntimeResourcesFcnOfS43B181 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 181, 1, 32, 83)
+%assign tlcSetupRuntimeResourcesFcnOfS43B182 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 182, 1, 32, 84)
+%assign tlcSetupRuntimeResourcesFcnOfS43B183 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 183, 1, 32, 85)
+%assign tlcSetupRuntimeResourcesFcnOfS43B184 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 184, 1, 32, 86)
+%assign tlcSetupRuntimeResourcesFcnOfS43B187 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 187, 1, 32, 87)
+%assign tlcSetupRuntimeResourcesFcnOfS43B188 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 188, 1, 32, 88)
+%assign tlcSetupRuntimeResourcesFcnOfS43B190 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 190, 1, 32, 89)
+%assign tlcSetupRuntimeResourcesFcnOfS43B193 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 193, 1, 32, 90)
+%assign tlcSetupRuntimeResourcesFcnOfS43B194 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 194, 1, 32, 91)
+%assign tlcSetupRuntimeResourcesFcnOfS43B195 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 195, 1, 32, 92)
+%assign tlcSetupRuntimeResourcesFcnOfS43B196 = OpaqueTLCBlockFcn("SetupRuntimeResources", 43, 196, 1, 32, 93)
+%assign tlcStartFcnOfS43B121 = OpaqueTLCBlockFcn("Start", 43, 121, 1, 32, 94)
+%assign tlcStartFcnOfS43B173 = OpaqueTLCBlockFcn("Start", 43, 173, 1, 32, 95)
+%assign tlcStartFcnOfS43B199 = OpaqueTLCBlockFcn("Start", 43, 199, 1, 32, 96)
+%assign tlcOutputsFcnOfS43B215 = OpaqueTLCBlockFcn("Outputs", 43, 215, 1, 32, 97)
+%assign tlcOutputsFcnOfS43B216 = OpaqueTLCBlockFcn("Outputs", 43, 216, 1, 32, 98)
+%assign tlcOutputsFcnOfS43B217 = OpaqueTLCBlockFcn("Outputs", 43, 217, 1, 32, 99)
+%assign tlcOutputsFcnOfS43B218 = OpaqueTLCBlockFcn("Outputs", 43, 218, 1, 32, 100)
+%assign tlcOutputsFcnOfS43B219 = OpaqueTLCBlockFcn("Outputs", 43, 219, 1, 32, 101)
+%assign tlcOutputsFcnOfS43B220 = OpaqueTLCBlockFcn("Outputs", 43, 220, 1, 32, 102)
+%assign tlcOutputsFcnOfS43B221 = OpaqueTLCBlockFcn("Outputs", 43, 221, 1, 32, 103)
+%assign tlcOutputsFcnOfS43B222 = OpaqueTLCBlockFcn("Outputs", 43, 222, 1, 32, 104)
+%assign tlcOutputsFcnOfS43B223 = OpaqueTLCBlockFcn("Outputs", 43, 223, 1, 32, 105)
+%assign tlcOutputsFcnOfS43B224 = OpaqueTLCBlockFcn("Outputs", 43, 224, 1, 32, 106)
+%assign tlcOutputsFcnOfS43B225 = OpaqueTLCBlockFcn("Outputs", 43, 225, 1, 32, 107)
+%assign tlcOutputsFcnOfS43B226 = OpaqueTLCBlockFcn("Outputs", 43, 226, 1, 32, 108)
+%assign tlcOutputsFcnOfS43B227 = OpaqueTLCBlockFcn("Outputs", 43, 227, 1, 32, 109)
+%assign tlcOutputsFcnOfS43B228 = OpaqueTLCBlockFcn("Outputs", 43, 228, 1, 32, 110)
+%assign tlcOutputsFcnOfS43B229 = OpaqueTLCBlockFcn("Outputs", 43, 229, 1, 32, 111)
+%assign tlcOutputsFcnOfS43B230 = OpaqueTLCBlockFcn("Outputs", 43, 230, 1, 32, 112)
+%assign tlcOutputsFcnOfS43B231 = OpaqueTLCBlockFcn("Outputs", 43, 231, 1, 32, 113)
+%assign tlcOutputsFcnOfS43B232 = OpaqueTLCBlockFcn("Outputs", 43, 232, 1, 32, 114)
+%assign tlcOutputsFcnOfS43B233 = OpaqueTLCBlockFcn("Outputs", 43, 233, 1, 32, 115)
+%assign tlcOutputsFcnOfS43B234 = OpaqueTLCBlockFcn("Outputs", 43, 234, 1, 32, 116)
+%assign tlcOutputsFcnOfS43B235 = OpaqueTLCBlockFcn("Outputs", 43, 235, 1, 32, 117)
+%assign tlcOutputsFcnOfS43B236 = OpaqueTLCBlockFcn("Outputs", 43, 236, 1, 32, 118)
+%assign tlcOutputsFcnOfS43B237 = OpaqueTLCBlockFcn("Outputs", 43, 237, 1, 32, 119)
+%assign tlcOutputsFcnOfS43B238 = OpaqueTLCBlockFcn("Outputs", 43, 238, 1, 32, 120)
+%assign tlcOutputsFcnOfS43B239 = OpaqueTLCBlockFcn("Outputs", 43, 239, 1, 32, 121)
+%assign tlcOutputsFcnOfS43B240 = OpaqueTLCBlockFcn("Outputs", 43, 240, 1, 32, 122)
+%assign tlcOutputsFcnOfS43B241 = OpaqueTLCBlockFcn("Outputs", 43, 241, 1, 32, 123)
+%assign tlcOutputsFcnOfS43B242 = OpaqueTLCBlockFcn("Outputs", 43, 242, 1, 32, 124)
+%assign tlcOutputsFcnOfS43B243 = OpaqueTLCBlockFcn("Outputs", 43, 243, 1, 32, 125)
+%assign tlcOutputsFcnOfS43B244 = OpaqueTLCBlockFcn("Outputs", 43, 244, 1, 32, 126)
+%assign tlcOutputsFcnOfS43B245 = OpaqueTLCBlockFcn("Outputs", 43, 245, 1, 32, 127)
+%assign tlcOutputsFcnOfS43B246 = OpaqueTLCBlockFcn("Outputs", 43, 246, 1, 32, 128)
+%assign tlcOutputsFcnOfS43B247 = OpaqueTLCBlockFcn("Outputs", 43, 247, 1, 32, 129)
+%assign tlcOutputsFcnOfS43B248 = OpaqueTLCBlockFcn("Outputs", 43, 248, 1, 32, 130)
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B215)
+/* {S!d18}SetupRuntimeResources for Scope: '<Root>/Scope' */
+%<tlcSetupRuntimeResourcesFcnOfS43B215>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B216)
+/* {S!d20}SetupRuntimeResources for Scope: '<Root>/Scope1' */
+%<tlcSetupRuntimeResourcesFcnOfS43B216>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B217)
+/* {S!d22}SetupRuntimeResources for Scope: '<Root>/Scope10' */
+%<tlcSetupRuntimeResourcesFcnOfS43B217>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B218)
+/* {S!d24}SetupRuntimeResources for Scope: '<Root>/Scope11' */
+%<tlcSetupRuntimeResourcesFcnOfS43B218>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B219)
+/* {S!d26}SetupRuntimeResources for Scope: '<Root>/Scope12' */
+%<tlcSetupRuntimeResourcesFcnOfS43B219>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B220)
+/* {S!d28}SetupRuntimeResources for Scope: '<Root>/Scope13' */
+%<tlcSetupRuntimeResourcesFcnOfS43B220>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B221)
+/* {S!d30}SetupRuntimeResources for Scope: '<Root>/Scope14' */
+%<tlcSetupRuntimeResourcesFcnOfS43B221>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B222)
+/* {S!d32}SetupRuntimeResources for Scope: '<Root>/Scope15' */
+%<tlcSetupRuntimeResourcesFcnOfS43B222>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B223)
+/* {S!d34}SetupRuntimeResources for Scope: '<Root>/Scope16' */
+%<tlcSetupRuntimeResourcesFcnOfS43B223>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B224)
+/* {S!d36}SetupRuntimeResources for Scope: '<Root>/Scope17' */
+%<tlcSetupRuntimeResourcesFcnOfS43B224>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B225)
+/* {S!d38}SetupRuntimeResources for Scope: '<Root>/Scope18' */
+%<tlcSetupRuntimeResourcesFcnOfS43B225>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B226)
+/* {S!d40}SetupRuntimeResources for Scope: '<Root>/Scope19' */
+%<tlcSetupRuntimeResourcesFcnOfS43B226>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B227)
+/* {S!d42}SetupRuntimeResources for Scope: '<Root>/Scope20' */
+%<tlcSetupRuntimeResourcesFcnOfS43B227>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B228)
+/* {S!d44}SetupRuntimeResources for Scope: '<Root>/Scope21' */
+%<tlcSetupRuntimeResourcesFcnOfS43B228>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B229)
+/* {S!d46}SetupRuntimeResources for Scope: '<Root>/Scope22' */
+%<tlcSetupRuntimeResourcesFcnOfS43B229>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B230)
+/* {S!d48}SetupRuntimeResources for Scope: '<Root>/Scope23' */
+%<tlcSetupRuntimeResourcesFcnOfS43B230>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B231)
+/* {S!d50}SetupRuntimeResources for Scope: '<Root>/Scope24' */
+%<tlcSetupRuntimeResourcesFcnOfS43B231>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B232)
+/* {S!d52}SetupRuntimeResources for Scope: '<Root>/Scope25' */
+%<tlcSetupRuntimeResourcesFcnOfS43B232>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B233)
+/* {S!d54}SetupRuntimeResources for Scope: '<Root>/Scope26' */
+%<tlcSetupRuntimeResourcesFcnOfS43B233>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B234)
+/* {S!d56}SetupRuntimeResources for Scope: '<Root>/Scope27' */
+%<tlcSetupRuntimeResourcesFcnOfS43B234>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B235)
+/* {S!d58}SetupRuntimeResources for Scope: '<Root>/Scope28' */
+%<tlcSetupRuntimeResourcesFcnOfS43B235>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B236)
+/* {S!d60}SetupRuntimeResources for Scope: '<Root>/Scope29' */
+%<tlcSetupRuntimeResourcesFcnOfS43B236>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B237)
+/* {S!d62}SetupRuntimeResources for Scope: '<Root>/Scope3' */
+%<tlcSetupRuntimeResourcesFcnOfS43B237>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B238)
+/* {S!d64}SetupRuntimeResources for Scope: '<Root>/Scope30' */
+%<tlcSetupRuntimeResourcesFcnOfS43B238>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B239)
+/* {S!d66}SetupRuntimeResources for Scope: '<Root>/Scope31' */
+%<tlcSetupRuntimeResourcesFcnOfS43B239>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B240)
+/* {S!d68}SetupRuntimeResources for Scope: '<Root>/Scope32' */
+%<tlcSetupRuntimeResourcesFcnOfS43B240>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B241)
+/* {S!d70}SetupRuntimeResources for Scope: '<Root>/Scope33' */
+%<tlcSetupRuntimeResourcesFcnOfS43B241>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B242)
+/* {S!d72}SetupRuntimeResources for Scope: '<Root>/Scope34' */
+%<tlcSetupRuntimeResourcesFcnOfS43B242>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B243)
+/* {S!d74}SetupRuntimeResources for Scope: '<Root>/Scope4' */
+%<tlcSetupRuntimeResourcesFcnOfS43B243>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B244)
+/* {S!d76}SetupRuntimeResources for Scope: '<Root>/Scope5' */
+%<tlcSetupRuntimeResourcesFcnOfS43B244>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B245)
+/* {S!d78}SetupRuntimeResources for Scope: '<Root>/Scope6' */
+%<tlcSetupRuntimeResourcesFcnOfS43B245>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B246)
+/* {S!d80}SetupRuntimeResources for Scope: '<Root>/Scope7' */
+%<tlcSetupRuntimeResourcesFcnOfS43B246>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B247)
+/* {S!d82}SetupRuntimeResources for Scope: '<Root>/Scope8' */
+%<tlcSetupRuntimeResourcesFcnOfS43B247>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B248)
+/* {S!d84}SetupRuntimeResources for Scope: '<Root>/Scope9' */
+%<tlcSetupRuntimeResourcesFcnOfS43B248>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B14)
+/* {S!d86}SetupRuntimeResources for Scope: '<S7>/Scope38' */
+%<tlcSetupRuntimeResourcesFcnOfS43B14>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B15)
+/* {S!d88}SetupRuntimeResources for Scope: '<S7>/Scope40' */
+%<tlcSetupRuntimeResourcesFcnOfS43B15>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B95)
+/* {S!d90}SetupRuntimeResources for Scope: '<S1>/Scope1' */
+%<tlcSetupRuntimeResourcesFcnOfS43B95>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B96)
+/* {S!d92}SetupRuntimeResources for Scope: '<S1>/Scope10' */
+%<tlcSetupRuntimeResourcesFcnOfS43B96>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B97)
+/* {S!d94}SetupRuntimeResources for Scope: '<S1>/Scope3' */
+%<tlcSetupRuntimeResourcesFcnOfS43B97>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B98)
+/* {S!d96}SetupRuntimeResources for Scope: '<S1>/Scope4' */
+%<tlcSetupRuntimeResourcesFcnOfS43B98>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B99)
+/* {S!d98}SetupRuntimeResources for Scope: '<S1>/Scope5' */
+%<tlcSetupRuntimeResourcesFcnOfS43B99>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B100)
+/* {S!d100}SetupRuntimeResources for Scope: '<S1>/Scope6' */
+%<tlcSetupRuntimeResourcesFcnOfS43B100>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B101)
+/* {S!d102}SetupRuntimeResources for Scope: '<S1>/Scope7' */
+%<tlcSetupRuntimeResourcesFcnOfS43B101>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B102)
+/* {S!d104}SetupRuntimeResources for Scope: '<S1>/Scope8' */
+%<tlcSetupRuntimeResourcesFcnOfS43B102>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B103)
+/* {S!d106}SetupRuntimeResources for Scope: '<S1>/Scope9' */
+%<tlcSetupRuntimeResourcesFcnOfS43B103>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B104)
+/* {S!d108}SetupRuntimeResources for ToWorkspace: '<S1>/To Workspace2' */
+%<tlcSetupRuntimeResourcesFcnOfS43B104>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B111)
+/* {S!d110}SetupRuntimeResources for Scope: '<S9>/Scope1' */
+%<tlcSetupRuntimeResourcesFcnOfS43B111>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B112)
+/* {S!d112}SetupRuntimeResources for Scope: '<S9>/Scope2' */
+%<tlcSetupRuntimeResourcesFcnOfS43B112>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B115)
+/* {S!d114}SetupRuntimeResources for Scope: '<S9>/Scope3' */
+%<tlcSetupRuntimeResourcesFcnOfS43B115>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B129)
+/* {S!d116}SetupRuntimeResources for Scope: '<S10>/Scope38' */
+%<tlcSetupRuntimeResourcesFcnOfS43B129>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B130)
+/* {S!d118}SetupRuntimeResources for ToWorkspace: '<S10>/To Workspace3' */
+%<tlcSetupRuntimeResourcesFcnOfS43B130>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B131)
+/* {S!d120}SetupRuntimeResources for Scope: '<S16>/Scope1' */
+%<tlcSetupRuntimeResourcesFcnOfS43B131>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B132)
+/* {S!d122}SetupRuntimeResources for Scope: '<S16>/Scope2' */
+%<tlcSetupRuntimeResourcesFcnOfS43B132>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B133)
+/* {S!d124}SetupRuntimeResources for Scope: '<S16>/Scope3' */
+%<tlcSetupRuntimeResourcesFcnOfS43B133>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B134)
+/* {S!d126}SetupRuntimeResources for Scope: '<S16>/Scope5' */
+%<tlcSetupRuntimeResourcesFcnOfS43B134>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B135)
+/* {S!d128}SetupRuntimeResources for Scope: '<S16>/Scope7' */
+%<tlcSetupRuntimeResourcesFcnOfS43B135>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B136)
+/* {S!d130}SetupRuntimeResources for Scope: '<S16>/Scope8' */
+%<tlcSetupRuntimeResourcesFcnOfS43B136>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B137)
+/* {S!d132}SetupRuntimeResources for ToWorkspace: '<S16>/To Workspace3' */
+%<tlcSetupRuntimeResourcesFcnOfS43B137>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B138)
+/* {S!d134}SetupRuntimeResources for Scope: '<S17>/Scope' */
+%<tlcSetupRuntimeResourcesFcnOfS43B138>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B140)
+/* {S!d136}SetupRuntimeResources for Scope: '<S17>/Scope1' */
+%<tlcSetupRuntimeResourcesFcnOfS43B140>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B142)
+/* {S!d138}SetupRuntimeResources for Scope: '<S17>/Scope8' */
+%<tlcSetupRuntimeResourcesFcnOfS43B142>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B143)
+/* {S!d140}SetupRuntimeResources for Scope: '<S22>/Scope' */
+%<tlcSetupRuntimeResourcesFcnOfS43B143>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B144)
+/* {S!d142}SetupRuntimeResources for Scope: '<S22>/Scope1' */
+%<tlcSetupRuntimeResourcesFcnOfS43B144>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B145)
+/* {S!d144}SetupRuntimeResources for Scope: '<S22>/Scope2' */
+%<tlcSetupRuntimeResourcesFcnOfS43B145>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B146)
+/* {S!d146}SetupRuntimeResources for Scope: '<S22>/Scope3' */
+%<tlcSetupRuntimeResourcesFcnOfS43B146>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B147)
+/* {S!d148}SetupRuntimeResources for Scope: '<S22>/Scope4' */
+%<tlcSetupRuntimeResourcesFcnOfS43B147>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B148)
+/* {S!d150}SetupRuntimeResources for Scope: '<S22>/Scope5' */
+%<tlcSetupRuntimeResourcesFcnOfS43B148>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B149)
+/* {S!d152}SetupRuntimeResources for Scope: '<S22>/Scope6' */
+%<tlcSetupRuntimeResourcesFcnOfS43B149>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B150)
+/* {S!d154}SetupRuntimeResources for Scope: '<S22>/Scope7' */
+%<tlcSetupRuntimeResourcesFcnOfS43B150>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B151)
+/* {S!d156}SetupRuntimeResources for Scope: '<S22>/Scope8' */
+%<tlcSetupRuntimeResourcesFcnOfS43B151>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B152)
+/* {S!d158}SetupRuntimeResources for Scope: '<S22>/Scope9' */
+%<tlcSetupRuntimeResourcesFcnOfS43B152>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B153)
+/* {S!d160}SetupRuntimeResources for Scope: '<S23>/Scope1' */
+%<tlcSetupRuntimeResourcesFcnOfS43B153>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B154)
+/* {S!d162}SetupRuntimeResources for Scope: '<S23>/Scope10' */
+%<tlcSetupRuntimeResourcesFcnOfS43B154>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B155)
+/* {S!d164}SetupRuntimeResources for ToWorkspace: '<S23>/To Workspace' */
+%<tlcSetupRuntimeResourcesFcnOfS43B155>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B156)
+/* {S!d166}SetupRuntimeResources for ToWorkspace: '<S23>/To Workspace1' */
+%<tlcSetupRuntimeResourcesFcnOfS43B156>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B157)
+/* {S!d168}SetupRuntimeResources for ToWorkspace: '<S23>/To Workspace2' */
+%<tlcSetupRuntimeResourcesFcnOfS43B157>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B169)
+/* {S!d170}SetupRuntimeResources for Scope: '<S2>/Scope1' */
+%<tlcSetupRuntimeResourcesFcnOfS43B169>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B170)
+/* {S!d172}SetupRuntimeResources for Scope: '<S2>/Scope2' */
+%<tlcSetupRuntimeResourcesFcnOfS43B170>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B171)
+/* {S!d174}SetupRuntimeResources for Scope: '<S2>/Scope3' */
+%<tlcSetupRuntimeResourcesFcnOfS43B171>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B172)
+/* {S!d176}SetupRuntimeResources for Scope: '<S3>/Scope' */
+%<tlcSetupRuntimeResourcesFcnOfS43B172>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B173)
+/* {S!d178}SetupRuntimeResources for S-Function (slrealtimeUDPReceive): '<Root>/UDP Receive' */
+%<tlcSetupRuntimeResourcesFcnOfS43B173>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B179)
+/* {S!d180}SetupRuntimeResources for Scope: '<S3>/Scope1' */
+%<tlcSetupRuntimeResourcesFcnOfS43B179>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B180)
+/* {S!d182}SetupRuntimeResources for Scope: '<S3>/Scope2' */
+%<tlcSetupRuntimeResourcesFcnOfS43B180>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B181)
+/* {S!d184}SetupRuntimeResources for Scope: '<S3>/Scope3' */
+%<tlcSetupRuntimeResourcesFcnOfS43B181>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B182)
+/* {S!d186}SetupRuntimeResources for Scope: '<S3>/Scope4' */
+%<tlcSetupRuntimeResourcesFcnOfS43B182>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B183)
+/* {S!d188}SetupRuntimeResources for Scope: '<S3>/Scope5' */
+%<tlcSetupRuntimeResourcesFcnOfS43B183>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B184)
+/* {S!d190}SetupRuntimeResources for Scope: '<S3>/Scope6' */
+%<tlcSetupRuntimeResourcesFcnOfS43B184>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B187)
+/* {S!d192}SetupRuntimeResources for Scope: '<S3>/Scope7' */
+%<tlcSetupRuntimeResourcesFcnOfS43B187>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B188)
+/* {S!d194}SetupRuntimeResources for ToWorkspace: '<S3>/To Workspace' */
+%<tlcSetupRuntimeResourcesFcnOfS43B188>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B190)
+/* {S!d196}SetupRuntimeResources for ToWorkspace: '<S3>/To Workspace1' */
+%<tlcSetupRuntimeResourcesFcnOfS43B190>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B193)
+/* {S!d198}SetupRuntimeResources for Scope: '<S87>/Scope2' */
+%<tlcSetupRuntimeResourcesFcnOfS43B193>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B194)
+/* {S!d200}SetupRuntimeResources for Scope: '<S87>/Scope3' */
+%<tlcSetupRuntimeResourcesFcnOfS43B194>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B195)
+/* {S!d202}SetupRuntimeResources for Scope: '<S87>/Scope4' */
+%<tlcSetupRuntimeResourcesFcnOfS43B195>\
+%endif
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS43B196)
+/* {S!d204}SetupRuntimeResources for Scope: '<S87>/Scope5' */
+%<tlcSetupRuntimeResourcesFcnOfS43B196>\
+%endif
+/* {S!d206}Start for S-Function (sdspToNetwork): '<S7>/UDP Send' */
+sErr = GetErrorBuffer(&AirRefueling_Platform_DW.UDPSend_NetworkLib[0U]);
+CreateUDPInterface(&AirRefueling_Platform_DW.UDPSend_NetworkLib[0U]);
+if (*sErr == 0) {
+    LibCreate_Network(&AirRefueling_Platform_DW.UDPSend_NetworkLib[0U], 1, "0.0.0.0", -1, "224.0.0.10", AirRefueling_Platform_P.UDPSend_remotePort, 8192, 1, 0);
+}
+if (*sErr == 0) {
+    LibStart(&AirRefueling_Platform_DW.UDPSend_NetworkLib[0U]);
+}
+if (*sErr != 0) {
+    DestroyUDPInterface(&AirRefueling_Platform_DW.UDPSend_NetworkLib[0U]);
+    if (*sErr != 0) {
+        %<(RTMSetErrStat("sErr"))>;
+        %<(RTMSetStopRequested(1))>;
+    }
+}
+/* {E!d206}End of Start for S-Function (sdspToNetwork): '<S7>/UDP Send' */
+
+/* {S!d208}Start for S-Function (sdspToNetwork): '<S7>/UDP Send11' */
+sErr = GetErrorBuffer(&AirRefueling_Platform_DW.UDPSend11_NetworkLib[0U]);
+CreateUDPInterface(&AirRefueling_Platform_DW.UDPSend11_NetworkLib[0U]);
+if (*sErr == 0) {
+    LibCreate_Network(&AirRefueling_Platform_DW.UDPSend11_NetworkLib[0U], 1, "0.0.0.0", -1, "127.0.0.1", AirRefueling_Platform_P.UDPSend11_remotePort, 8192, 1, 0);
+}
+if (*sErr == 0) {
+    LibStart(&AirRefueling_Platform_DW.UDPSend11_NetworkLib[0U]);
+}
+if (*sErr != 0) {
+    DestroyUDPInterface(&AirRefueling_Platform_DW.UDPSend11_NetworkLib[0U]);
+    if (*sErr != 0) {
+        %<(RTMSetErrStat("sErr"))>;
+        %<(RTMSetStopRequested(1))>;
+    }
+}
+/* {E!d208}End of Start for S-Function (sdspToNetwork): '<S7>/UDP Send11' */
+
+/* {S!d210}Start for S-Function (sdspToNetwork): '<S7>/UDP Send3' */
+sErr = GetErrorBuffer(&AirRefueling_Platform_DW.UDPSend3_NetworkLib[0U]);
+CreateUDPInterface(&AirRefueling_Platform_DW.UDPSend3_NetworkLib[0U]);
+if (*sErr == 0) {
+    LibCreate_Network(&AirRefueling_Platform_DW.UDPSend3_NetworkLib[0U], 1, "0.0.0.0", -1, "127.0.0.1", AirRefueling_Platform_P.UDPSend3_remotePort, 8192, 1, 0);
+}
+if (*sErr == 0) {
+    LibStart(&AirRefueling_Platform_DW.UDPSend3_NetworkLib[0U]);
+}
+if (*sErr != 0) {
+    DestroyUDPInterface(&AirRefueling_Platform_DW.UDPSend3_NetworkLib[0U]);
+    if (*sErr != 0) {
+        %<(RTMSetErrStat("sErr"))>;
+        %<(RTMSetStopRequested(1))>;
+    }
+}
+/* {E!d210}End of Start for S-Function (sdspToNetwork): '<S7>/UDP Send3' */
+
+/* {S!d212}Start for S-Function (sdspToNetwork): '<S7>/UDP Send6' */
+sErr = GetErrorBuffer(&AirRefueling_Platform_DW.UDPSend6_NetworkLib[0U]);
+CreateUDPInterface(&AirRefueling_Platform_DW.UDPSend6_NetworkLib[0U]);
+if (*sErr == 0) {
+    LibCreate_Network(&AirRefueling_Platform_DW.UDPSend6_NetworkLib[0U], 1, "0.0.0.0", -1, "127.0.0.1", AirRefueling_Platform_P.UDPSend6_remotePort, 8192, 1, 0);
+}
+if (*sErr == 0) {
+    LibStart(&AirRefueling_Platform_DW.UDPSend6_NetworkLib[0U]);
+}
+if (*sErr != 0) {
+    DestroyUDPInterface(&AirRefueling_Platform_DW.UDPSend6_NetworkLib[0U]);
+    if (*sErr != 0) {
+        %<(RTMSetErrStat("sErr"))>;
+        %<(RTMSetStopRequested(1))>;
+    }
+}
+/* {E!d212}End of Start for S-Function (sdspToNetwork): '<S7>/UDP Send6' */
+
+/* {S!d214}Start for S-Function (sdspToNetwork): '<S7>/UDP Send1' */
+sErr = GetErrorBuffer(&AirRefueling_Platform_DW.UDPSend1_NetworkLib[0U]);
+CreateUDPInterface(&AirRefueling_Platform_DW.UDPSend1_NetworkLib[0U]);
+if (*sErr == 0) {
+    LibCreate_Network(&AirRefueling_Platform_DW.UDPSend1_NetworkLib[0U], 1, "0.0.0.0", -1, "127.0.0.1", AirRefueling_Platform_P.UDPSend1_remotePort, 8192, 1, 0);
+}
+if (*sErr == 0) {
+    LibStart(&AirRefueling_Platform_DW.UDPSend1_NetworkLib[0U]);
+}
+if (*sErr != 0) {
+    DestroyUDPInterface(&AirRefueling_Platform_DW.UDPSend1_NetworkLib[0U]);
+    if (*sErr != 0) {
+        %<(RTMSetErrStat("sErr"))>;
+        %<(RTMSetStopRequested(1))>;
+    }
+}
+/* {E!d214}End of Start for S-Function (sdspToNetwork): '<S7>/UDP Send1' */
+
+/* {S!d216}Start for S-Function (sdspToNetwork): '<S7>/UDP Send4' */
+sErr = GetErrorBuffer(&AirRefueling_Platform_DW.UDPSend4_NetworkLib[0U]);
+CreateUDPInterface(&AirRefueling_Platform_DW.UDPSend4_NetworkLib[0U]);
+if (*sErr == 0) {
+    LibCreate_Network(&AirRefueling_Platform_DW.UDPSend4_NetworkLib[0U], 1, "0.0.0.0", -1, "127.0.0.1", AirRefueling_Platform_P.UDPSend4_remotePort, 8192, 1, 0);
+}
+if (*sErr == 0) {
+    LibStart(&AirRefueling_Platform_DW.UDPSend4_NetworkLib[0U]);
+}
+if (*sErr != 0) {
+    DestroyUDPInterface(&AirRefueling_Platform_DW.UDPSend4_NetworkLib[0U]);
+    if (*sErr != 0) {
+        %<(RTMSetErrStat("sErr"))>;
+        %<(RTMSetStopRequested(1))>;
+    }
+}
+/* {E!d216}End of Start for S-Function (sdspToNetwork): '<S7>/UDP Send4' */
+
+/* {S!d218}Start for If: '<S54>/if Height < Max low altitude  elseif Height > Min isotropic altitude ' */
+AirRefueling_Platform_DW.ifHeightMaxlowaltitudeelseifHei = -1;
+%if !WHITE_SPACE(tlcStartFcnOfS43B121)
+/* {S!d220}Start for S-Function (saeroatmos): '<S25>/S-Function' incorporates:
+ *  Constant: '<S17>/Height'
+ */
+%<tlcStartFcnOfS43B121>\
+%endif
+/* {S!d222}Start for If: '<S53>/if Height < Max low altitude  elseif Height > Min isotropic altitude ' */
+AirRefueling_Platform_DW.ifHeightMaxlowaltitudeelseifH_e = -1;
+%if !WHITE_SPACE(tlcStartFcnOfS43B173)
+/* {S!d224}Start for S-Function (slrealtimeUDPReceive): '<Root>/UDP Receive' */
+%<tlcStartFcnOfS43B173>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS43B199)
+/* {S!d226}Start for S-Function (saeroatmos): '<S126>/S-Function' */
+%<tlcStartFcnOfS43B199>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B215)
+/* {S!d228}ConstCode for Scope: '<Root>/Scope' */
+%<tlcOutputsFcnOfS43B215>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B216)
+/* {S!d230}ConstCode for Scope: '<Root>/Scope1' */
+%<tlcOutputsFcnOfS43B216>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B217)
+/* {S!d232}ConstCode for Scope: '<Root>/Scope10' */
+%<tlcOutputsFcnOfS43B217>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B218)
+/* {S!d234}ConstCode for Scope: '<Root>/Scope11' */
+%<tlcOutputsFcnOfS43B218>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B219)
+/* {S!d236}ConstCode for Scope: '<Root>/Scope12' */
+%<tlcOutputsFcnOfS43B219>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B220)
+/* {S!d238}ConstCode for Scope: '<Root>/Scope13' */
+%<tlcOutputsFcnOfS43B220>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B221)
+/* {S!d240}ConstCode for Scope: '<Root>/Scope14' */
+%<tlcOutputsFcnOfS43B221>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B222)
+/* {S!d242}ConstCode for Scope: '<Root>/Scope15' */
+%<tlcOutputsFcnOfS43B222>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B223)
+/* {S!d244}ConstCode for Scope: '<Root>/Scope16' */
+%<tlcOutputsFcnOfS43B223>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B224)
+/* {S!d246}ConstCode for Scope: '<Root>/Scope17' */
+%<tlcOutputsFcnOfS43B224>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B225)
+/* {S!d248}ConstCode for Scope: '<Root>/Scope18' */
+%<tlcOutputsFcnOfS43B225>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B226)
+/* {S!d250}ConstCode for Scope: '<Root>/Scope19' */
+%<tlcOutputsFcnOfS43B226>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B227)
+/* {S!d252}ConstCode for Scope: '<Root>/Scope20' */
+%<tlcOutputsFcnOfS43B227>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B228)
+/* {S!d254}ConstCode for Scope: '<Root>/Scope21' */
+%<tlcOutputsFcnOfS43B228>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B229)
+/* {S!d256}ConstCode for Scope: '<Root>/Scope22' */
+%<tlcOutputsFcnOfS43B229>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B230)
+/* {S!d258}ConstCode for Scope: '<Root>/Scope23' */
+%<tlcOutputsFcnOfS43B230>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B231)
+/* {S!d260}ConstCode for Scope: '<Root>/Scope24' */
+%<tlcOutputsFcnOfS43B231>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B232)
+/* {S!d262}ConstCode for Scope: '<Root>/Scope25' */
+%<tlcOutputsFcnOfS43B232>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B233)
+/* {S!d264}ConstCode for Scope: '<Root>/Scope26' */
+%<tlcOutputsFcnOfS43B233>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B234)
+/* {S!d266}ConstCode for Scope: '<Root>/Scope27' */
+%<tlcOutputsFcnOfS43B234>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B235)
+/* {S!d268}ConstCode for Scope: '<Root>/Scope28' */
+%<tlcOutputsFcnOfS43B235>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B236)
+/* {S!d270}ConstCode for Scope: '<Root>/Scope29' */
+%<tlcOutputsFcnOfS43B236>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B237)
+/* {S!d272}ConstCode for Scope: '<Root>/Scope3' */
+%<tlcOutputsFcnOfS43B237>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B238)
+/* {S!d274}ConstCode for Scope: '<Root>/Scope30' */
+%<tlcOutputsFcnOfS43B238>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B239)
+/* {S!d276}ConstCode for Scope: '<Root>/Scope31' */
+%<tlcOutputsFcnOfS43B239>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B240)
+/* {S!d278}ConstCode for Scope: '<Root>/Scope32' */
+%<tlcOutputsFcnOfS43B240>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B241)
+/* {S!d280}ConstCode for Scope: '<Root>/Scope33' */
+%<tlcOutputsFcnOfS43B241>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B242)
+/* {S!d282}ConstCode for Scope: '<Root>/Scope34' */
+%<tlcOutputsFcnOfS43B242>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B243)
+/* {S!d284}ConstCode for Scope: '<Root>/Scope4' */
+%<tlcOutputsFcnOfS43B243>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B244)
+/* {S!d286}ConstCode for Scope: '<Root>/Scope5' */
+%<tlcOutputsFcnOfS43B244>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B245)
+/* {S!d288}ConstCode for Scope: '<Root>/Scope6' */
+%<tlcOutputsFcnOfS43B245>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B246)
+/* {S!d290}ConstCode for Scope: '<Root>/Scope7' */
+%<tlcOutputsFcnOfS43B246>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B247)
+/* {S!d292}ConstCode for Scope: '<Root>/Scope8' */
+%<tlcOutputsFcnOfS43B247>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS43B248)
+/* {S!d294}ConstCode for Scope: '<Root>/Scope9' */
+%<tlcOutputsFcnOfS43B248>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedStartLocalVars", localVarDecl)>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 32, fcnProtoType)>
+%endfunction

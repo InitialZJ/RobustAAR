@@ -1,0 +1,102 @@
+%implements s44_b0_9euqc_0_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign _modelSS = ""
+
+/* {S!d7}Outputs for Enabled SubSystem: '<S40>/Distance into gust (y)' incorporates:
+ *  EnablePort: '<S44>/Enable'
+ */
+if (%<(SLibCG_SE(SLibCGIRIsSampleHit(1, 43)))> && %<(SLibCG_SE(LibIsMajorTimeStep()))>) {
+    if (rtu_Enable) {
+        if (!localDW->Distanceintogusty_MODE) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[20], "SystemReset",0)
+%if SLibCG_SystemFcnArgAccessed("Air_Distanceintogusty_Reset",20,0)
+%<SLibCG_AccessArg(0 ,2, 0)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("Air_Distanceintogusty_Reset",20,1)
+%<SLibCG_AccessArg(0 ,2, 4)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("Air_Distanceintogusty_Reset",20,2)
+%<SLibCG_AccessArg(0 ,2, 5)>
+%endif
+
+%<SLibCGIRGenReusableSysCall("Air_Distanceintogusty_Reset", ["%<::tSimStruct>", "localP", "localX"], 20, 0, 5, 0, 6, 20)>\
+
+%endif
+            localDW->Distanceintogusty_MODE = true;
+        }
+    } else {
+        if (localDW->Distanceintogusty_MODE) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[20], "Disable",0)
+%if SLibCG_SystemFcnArgAccessed("A_Distanceintogusty_Disable",20,0)
+%<SLibCG_AccessArg(0 ,2, 0)>
+%endif
+%if SLibCG_SystemFcnArgAccessed("A_Distanceintogusty_Disable",20,1)
+%<SLibCG_AccessArg(0 ,2, 3)>
+%endif
+
+%<SLibCGIRGenReusableSysCall("A_Distanceintogusty_Disable", ["%<::tSimStruct>", "localDW"], 20, 0, 14, 0, 6, 20)>\
+
+%endif
+        }
+    }
+}
+if (localDW->Distanceintogusty_MODE) {
+    /* {S!d10}Integrator: '<S44>/Distance into Gust (x) (Limited to gust length d) ' */
+    /* Limited  Integrator  */
+    if (localX->DistanceintoGustxLimitedtogustl >= rtp_d_m) {
+        localX->DistanceintoGustxLimitedtogustl = rtp_d_m;
+    } else {
+        if (localX->DistanceintoGustxLimitedtogustl <= localP->DistanceintoGustxLimitedtogus_f) {
+            localX->DistanceintoGustxLimitedtogustl = localP->DistanceintoGustxLimitedtogus_f;
+        }
+    }
+    /* {S!d12}Integrator: '<S44>/Distance into Gust (x) (Limited to gust length d) ' */
+    localB->DistanceintoGustxLimitedtogustl = localX->DistanceintoGustxLimitedtogustl;
+}
+/* {E!d7}End of Outputs for SubSystem: '<S40>/Distance into gust (y)' */
+%closefile cfgTxt
+%<cfgTxt>
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[0].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("Output", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Output"))
+%<SLibCG_AccessArg(0, 2, 0)>
+%endif
+%if SLibCG_ArgAccessed(0, 2, 0)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "Output", rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Output"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface)) ||...
+(GenerateClassInterface && SLibIsMultiInstanceServer(rtmArgSys))
+%<SLibCG_UndoAccessArg(0, 2, 0)>
+%endif
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AirRefuel_Distanceintogusty(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(0, 2, 0)
+%<comma>%<::tSimStructType> * const %<::tSimStruct>\
+%assign comma = ", "
+%assign rtmArgSys = SLibGetModuleFileNameOwnerSystemIdx(0)
+%assign sourceFile = SLibGetFullFileNameForSystemCode("sys_fcn_defn", rtmArgSys)
+%<SLibUpdateLocalSymbolTableForFile(sourceFile, SLibGetFcnDefinitionRTMSymbolName())>\
+%endif
+%<comma>boolean_T rtu_Enable\
+%assign comma = ", "
+%<comma>B_Distanceintogusty_AirRefuel_T *localB\
+%assign comma = ", "
+%<comma>DW_Distanceintogusty_AirRefue_T *localDW\
+%assign comma = ", "
+%<comma>P_Distanceintogusty_AirRefuel_T *localP\
+%assign comma = ", "
+%<comma>X_Distanceintogusty_AirRefuel_T *localX\
+%assign comma = ", "
+%<comma>real_T rtp_d_m\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%endfunction

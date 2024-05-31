@@ -1,0 +1,13 @@
+%implements s44_b0_9euqc_0_BlockInstanceSetup "C"
+
+%function BlockInstanceSetup(block, system) Output
+%% Subsystems with iterators in IR:
+%% TLC Block Registration buffer:
+%<LibAddToCommonIncludes("DAHostLib_Network.h")>
+%<LibAddToCommonIncludes("DAHostLib_Network.h")>
+%<LibAddToCommonIncludes("DAHostLib_Network.h")>
+%<LibAddToCommonIncludes("DAHostLib_Network.h")>
+%<LibAddToCommonIncludes("DAHostLib_Network.h")>
+%<LibAddToCommonIncludes("DAHostLib_Network.h")>
+%% END  Block Registration buffer
+%endfunction

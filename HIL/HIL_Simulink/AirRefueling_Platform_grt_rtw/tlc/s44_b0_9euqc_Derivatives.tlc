@@ -1,0 +1,218 @@
+%implements s44_b0_9euqc_Derivatives "C"
+
+%function Derivatives(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+XDot_AirRefueling_Platform_T *_rtXdot;
+boolean_T lsat;
+boolean_T usat;
+%closefile localVarDecl
+%assign _modelSS = ""
+
+_rtXdot = %<(SLibCG_SE(SLibGetContStatesDerivativeStructPtr()))>;
+/* {S!d1600}Derivatives for Integrator: '<S150>/Integrator ' */
+_rtXdot->Integrator_CSTATE = AirRefueling_Platform_B.RateSaturation_p;
+/* {S!d1602}Derivatives for Integrator: '<S148>/Integrator ' */
+_rtXdot->Integrator_CSTATE_j = AirRefueling_Platform_B.RateSaturation_j;
+/* {S!d1604}Derivatives for Integrator: '<S147>/Integrator ' */
+_rtXdot->Integrator_CSTATE_b = AirRefueling_Platform_B.RateSaturation_f;
+/* {S!d1606}Derivatives for Integrator: '<S149>/Integrator ' */
+_rtXdot->Integrator_CSTATE_f = AirRefueling_Platform_B.RateSaturation_d;
+/* {S!d1608}Derivatives for Integrator: '<S98>/phi theta psi' */
+_rtXdot->phithetapsi_CSTATE[0] = AirRefueling_Platform_B.TmpSignalConversionAtphithetaps[0];
+/* {S!d1610}Derivatives for Integrator: '<S87>/Integrator1' */
+_rtXdot->Integrator1_CSTATE[0] = AirRefueling_Platform_B.Sum4_f[0];
+/* {S!d1612}Derivatives for Integrator: '<S91>/ub,vb,wb' */
+_rtXdot->ubvbwb_CSTATE[0] = AirRefueling_Platform_B.Sum_o[0];
+/* {S!d1614}Derivatives for Integrator: '<S91>/p,q,r ' */
+_rtXdot->pqr_CSTATE[0] = AirRefueling_Platform_B.Product2[0];
+/* {S!d1616}Derivatives for Integrator: '<S5>/Integrator' incorporates:
+ *  Constant: '<S5>/tanker acceleration'
+ */
+_rtXdot->Integrator_CSTATE_m[0] = AirRefueling_Platform_P.tankeracceleration_Value[0];
+/* {S!d1618}Derivatives for Integrator: '<S98>/phi theta psi' */
+_rtXdot->phithetapsi_CSTATE[1] = AirRefueling_Platform_B.TmpSignalConversionAtphithetaps[1];
+/* {S!d1620}Derivatives for Integrator: '<S87>/Integrator1' */
+_rtXdot->Integrator1_CSTATE[1] = AirRefueling_Platform_B.Sum4_f[1];
+/* {S!d1622}Derivatives for Integrator: '<S91>/ub,vb,wb' */
+_rtXdot->ubvbwb_CSTATE[1] = AirRefueling_Platform_B.Sum_o[1];
+/* {S!d1624}Derivatives for Integrator: '<S91>/p,q,r ' */
+_rtXdot->pqr_CSTATE[1] = AirRefueling_Platform_B.Product2[1];
+/* {S!d1626}Derivatives for Integrator: '<S5>/Integrator' incorporates:
+ *  Constant: '<S5>/tanker acceleration'
+ */
+_rtXdot->Integrator_CSTATE_m[1] = AirRefueling_Platform_P.tankeracceleration_Value[1];
+/* {S!d1628}Derivatives for Integrator: '<S98>/phi theta psi' */
+_rtXdot->phithetapsi_CSTATE[2] = AirRefueling_Platform_B.TmpSignalConversionAtphithetaps[2];
+/* {S!d1630}Derivatives for Integrator: '<S87>/Integrator1' */
+_rtXdot->Integrator1_CSTATE[2] = AirRefueling_Platform_B.Sum4_f[2];
+/* {S!d1632}Derivatives for Integrator: '<S91>/ub,vb,wb' */
+_rtXdot->ubvbwb_CSTATE[2] = AirRefueling_Platform_B.Sum_o[2];
+/* {S!d1634}Derivatives for Integrator: '<S91>/p,q,r ' */
+_rtXdot->pqr_CSTATE[2] = AirRefueling_Platform_B.Product2[2];
+/* {S!d1636}Derivatives for Integrator: '<S5>/Integrator' incorporates:
+ *  Constant: '<S5>/tanker acceleration'
+ */
+_rtXdot->Integrator_CSTATE_m[2] = AirRefueling_Platform_P.tankeracceleration_Value[2];
+/* {S!d1638}Derivatives for Integrator: '<S23>/Integrator1' */
+memcpy(&_rtXdot->Integrator1_CSTATE_b[0], &AirRefueling_Platform_B.Integrator_p[0], 10U * sizeof(real_T));
+/* {S!d1640}Derivatives for Integrator: '<S23>/Integrator3' */
+memcpy(&_rtXdot->Integrator3_CSTATE[0], &AirRefueling_Platform_B.Integrator2[0], 10U * sizeof(real_T));
+/* {S!d1642}Derivatives for Integrator: '<S16>/Integrator1' */
+_rtXdot->Integrator1_CSTATE_h = AirRefueling_Platform_B.dl_k;
+/* {S!d1644}Derivatives for Integrator: '<S16>/Integrator' */
+_rtXdot->Integrator_CSTATE_h = AirRefueling_Platform_B.Saturation;
+/* {S!d1646}Derivatives for Integrator: '<S5>/Integrator1' */
+_rtXdot->Integrator1_CSTATE_bp[0] = AirRefueling_Platform_B.Integrator[0];
+_rtXdot->Integrator1_CSTATE_bp[1] = AirRefueling_Platform_B.Integrator[1];
+_rtXdot->Integrator1_CSTATE_bp[2] = AirRefueling_Platform_B.Integrator[2];
+/* {S!d1575}Derivatives for Enabled SubSystem: '<S49>/Hugw(s)' */
+if (AirRefueling_Platform_DW.Hugws_MODE) {
+    /* {S!d1648}Derivatives for Integrator: '<S62>/ug_p' */
+    _rtXdot->ug_p_CSTATE[0] = AirRefueling_Platform_B.w_a[0];
+    _rtXdot->ug_p_CSTATE[1] = AirRefueling_Platform_B.w_a[1];
+} else {
+%<SLibCGIRZeroOutDerivativesForSystem(24, 43, 78)>\
+}
+/* {E!d1575}End of Derivatives for SubSystem: '<S49>/Hugw(s)' */
+
+/* {S!d1577}Derivatives for Enabled SubSystem: '<S49>/Hvgw(s)' */
+if (AirRefueling_Platform_DW.Hvgws_MODE) {
+    /* {S!d1650}Derivatives for Integrator: '<S63>/vg_p1' */
+    _rtXdot->vg_p1_CSTATE[0] = AirRefueling_Platform_B.w_m[0];
+    /* {S!d1652}Derivatives for Integrator: '<S63>/vgw_p2' */
+    _rtXdot->vgw_p2_CSTATE[0] = AirRefueling_Platform_B.w_g[0];
+    /* {S!d1654}Derivatives for Integrator: '<S63>/vg_p1' */
+    _rtXdot->vg_p1_CSTATE[1] = AirRefueling_Platform_B.w_m[1];
+    /* {S!d1656}Derivatives for Integrator: '<S63>/vgw_p2' */
+    _rtXdot->vgw_p2_CSTATE[1] = AirRefueling_Platform_B.w_g[1];
+} else {
+%<SLibCGIRZeroOutDerivativesForSystem(25, 43, 79)>\
+}
+/* {E!d1577}End of Derivatives for SubSystem: '<S49>/Hvgw(s)' */
+
+/* {S!d1579}Derivatives for Enabled SubSystem: '<S49>/Hwgw(s)' */
+if (AirRefueling_Platform_DW.Hwgws_MODE) {
+    /* {S!d1658}Derivatives for Integrator: '<S64>/wg_p1' */
+    _rtXdot->wg_p1_CSTATE[0] = AirRefueling_Platform_B.w[0];
+    /* {S!d1660}Derivatives for Integrator: '<S64>/wg_p2' */
+    _rtXdot->wg_p2_CSTATE[0] = AirRefueling_Platform_B.w_j[0];
+    /* {S!d1662}Derivatives for Integrator: '<S64>/wg_p1' */
+    _rtXdot->wg_p1_CSTATE[1] = AirRefueling_Platform_B.w[1];
+    /* {S!d1664}Derivatives for Integrator: '<S64>/wg_p2' */
+    _rtXdot->wg_p2_CSTATE[1] = AirRefueling_Platform_B.w_j[1];
+} else {
+%<SLibCGIRZeroOutDerivativesForSystem(26, 43, 80)>\
+}
+/* {E!d1579}End of Derivatives for SubSystem: '<S49>/Hwgw(s)' */
+
+/* {S!d1581}Derivatives for Enabled SubSystem: '<S40>/Distance into gust (x)' */
+if (AirRefueling_Platform_DW.Distanceintogustx_MODE) {
+    /* {S!d1666}Derivatives for Integrator: '<S43>/Distance into Gust (x) (Limited to gust length d)' */
+    lsat = (AirRefueling_Platform_X.DistanceintoGustxLimitedtogus_k <= AirRefueling_Platform_P.DistanceintoGustxLimitedtogus_o);
+    /* {S!d1582}Derivatives for Enabled SubSystem: '<S40>/Distance into gust (x)' */
+    usat = (AirRefueling_Platform_X.DistanceintoGustxLimitedtogus_k >= AirRefueling_Platform_P.Distanceintogustx_d_m);
+    /* {E!d1582}End of Derivatives for SubSystem: '<S40>/Distance into gust (x)' */
+    if (((!lsat) && (!usat)) || (lsat && (AirRefueling_Platform_B.V2 > 0.0)) || (usat && (AirRefueling_Platform_B.V2 < 0.0))) {
+        _rtXdot->DistanceintoGustxLimitedtogus_k = AirRefueling_Platform_B.V2;
+    } else {
+        /* in saturation */
+        _rtXdot->DistanceintoGustxLimitedtogus_k = 0.0;
+    }
+    /* {E!d1666}End of Derivatives for Integrator: '<S43>/Distance into Gust (x) (Limited to gust length d)' */
+} else {
+%<SLibCGIRZeroOutDerivativesForSystem(19, 43, 88)>\
+}
+/* {E!d1581}End of Derivatives for SubSystem: '<S40>/Distance into gust (x)' */
+
+/* {S!d1585}Derivatives for Enabled SubSystem: '<S40>/Distance into gust (y)' */
+/* {S!d1586}Derivatives for Enabled SubSystem: '<S40>/Distance into gust (y)' */
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[20], "Derivative",0)
+%if SLibCG_SystemFcnArgAccessed("Air_Distanceintogusty_Deriv",20,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("Air_Distanceintogusty_Deriv", ["%<_modelSS>", "AirRefueling_Platform_B.V2", "&AirRefueling_Platform_DW.Distanceintogusty", "&AirRefueling_Platform_P.Distanceintogusty", "&AirRefueling_Platform_X.Distanceintogusty", "&_rtXdot->Distanceintogusty", "AirRefueling_Platform_P.Distanceintogusty_d_m"], 20, 0, 8, 0, 8, 43)>\
+
+
+%endif
+/* {E!d1586}End of Derivatives for SubSystem: '<S40>/Distance into gust (y)' */
+/* {E!d1585}End of Derivatives for SubSystem: '<S40>/Distance into gust (y)' */
+
+/* {S!d1589}Derivatives for Enabled SubSystem: '<S40>/Distance into gust (z)' */
+/* {S!d1590}Derivatives for Enabled SubSystem: '<S40>/Distance into gust (z)' */
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[20], "Derivative",0)
+%if SLibCG_SystemFcnArgAccessed("Air_Distanceintogusty_Deriv",20,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("Air_Distanceintogusty_Deriv", ["%<_modelSS>", "AirRefueling_Platform_B.V2", "&AirRefueling_Platform_DW.Distanceintogustz", "&AirRefueling_Platform_P.Distanceintogustz", "&AirRefueling_Platform_X.Distanceintogustz", "&_rtXdot->Distanceintogustz", "AirRefueling_Platform_P.Distanceintogustz_d_m"], 20, 1, 8, 0, 8, 43)>\
+
+
+%endif
+/* {E!d1590}End of Derivatives for SubSystem: '<S40>/Distance into gust (z)' */
+/* {E!d1589}End of Derivatives for SubSystem: '<S40>/Distance into gust (z)' */
+
+/* {S!d1668}Derivatives for Integrator: '<S23>/Integrator' */
+memcpy(&_rtXdot->Integrator_CSTATE_p[0], &AirRefueling_Platform_B.ddtheta1[0], 10U * sizeof(real_T));
+/* {S!d1670}Derivatives for Integrator: '<S23>/Integrator2' */
+memcpy(&_rtXdot->Integrator2_CSTATE[0], &AirRefueling_Platform_B.ddtheta2[0], 10U * sizeof(real_T));
+/* {S!d1593}Derivatives for Enabled SubSystem: '<S48>/Hpgw' */
+if (AirRefueling_Platform_DW.Hpgw_MODE) {
+    /* {S!d1672}Derivatives for Integrator: '<S59>/pgw_p' */
+    _rtXdot->pgw_p_CSTATE[0] = AirRefueling_Platform_B.w_h0[0];
+    _rtXdot->pgw_p_CSTATE[1] = AirRefueling_Platform_B.w_h0[1];
+} else {
+%<SLibCGIRZeroOutDerivativesForSystem(21, 43, 161)>\
+}
+/* {E!d1593}End of Derivatives for SubSystem: '<S48>/Hpgw' */
+
+/* {S!d1595}Derivatives for Enabled SubSystem: '<S48>/Hqgw' */
+if (AirRefueling_Platform_DW.Hqgw_MODE) {
+    /* {S!d1674}Derivatives for Integrator: '<S60>/qgw_p' */
+    _rtXdot->qgw_p_CSTATE[0] = AirRefueling_Platform_B.w_h[0];
+    _rtXdot->qgw_p_CSTATE[1] = AirRefueling_Platform_B.w_h[1];
+} else {
+%<SLibCGIRZeroOutDerivativesForSystem(22, 43, 163)>\
+}
+/* {E!d1595}End of Derivatives for SubSystem: '<S48>/Hqgw' */
+
+/* {S!d1597}Derivatives for Enabled SubSystem: '<S48>/Hrgw' */
+if (AirRefueling_Platform_DW.Hrgw_MODE) {
+    /* {S!d1676}Derivatives for Integrator: '<S61>/rgw_p' */
+    _rtXdot->rgw_p_CSTATE[0] = AirRefueling_Platform_B.w_e[0];
+    _rtXdot->rgw_p_CSTATE[1] = AirRefueling_Platform_B.w_e[1];
+} else {
+%<SLibCGIRZeroOutDerivativesForSystem(23, 43, 165)>\
+}
+/* {E!d1597}End of Derivatives for SubSystem: '<S48>/Hrgw' */
+
+/* {S!d1678}Derivatives for Integrator: '<S86>/Integrator' */
+_rtXdot->Integrator_CSTATE_d = AirRefueling_Platform_B.Saturation_p;
+/* {S!d1680}Derivatives for Integrator: '<S86>/Integrator1' */
+_rtXdot->Integrator1_CSTATE_e = AirRefueling_Platform_B.Sum2[1];
+/* {S!d1682}Derivatives for Integrator: '<S86>/Integrator2' */
+_rtXdot->Integrator2_CSTATE_l = AirRefueling_Platform_B.Sum2[2];
+/* {S!d1684}Derivatives for Integrator: '<S91>/xe,ye,ze' */
+_rtXdot->xeyeze_CSTATE[0] = AirRefueling_Platform_B.Product_p[0];
+_rtXdot->xeyeze_CSTATE[1] = AirRefueling_Platform_B.Product_p[1];
+_rtXdot->xeyeze_CSTATE[2] = AirRefueling_Platform_B.Product_p[2];
+/* {S!d1686}Derivatives for Integrator: '<S125>/Integrator ' */
+_rtXdot->Integrator_CSTATE_pf = AirRefueling_Platform_B.RateSaturation;
+/* {S!d1688}Derivatives for Integrator: '<S124>/LF_state' */
+_rtXdot->LF_state_CSTATE = AirRefueling_Platform_B.Gain1;
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedDerivativeLocalVars", localVarDecl)>
+%endfunction
+%function DerivativesFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Derivatives(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 37, fcnProtoType)>
+%endfunction

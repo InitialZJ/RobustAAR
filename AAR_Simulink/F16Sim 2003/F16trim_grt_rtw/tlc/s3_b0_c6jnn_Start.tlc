@@ -1,0 +1,16 @@
+%implements s3_b0_c6jnn_Start "C"
+
+%function Start(block, system) Output
+%assign tlcStartFcnOfS3B5 = OpaqueTLCBlockFcn("Start", 3, 5, 0, 0)
+%assign tlcStartFcnOfS3B16 = OpaqueTLCBlockFcn("Start", 3, 16, 0, 0)
+%assign tlcStartFcnOfS3B21 = OpaqueTLCBlockFcn("Start", 3, 21, 0, 0)
+%<tlcStartFcnOfS3B5>\
+%<tlcStartFcnOfS3B16>\
+%<tlcStartFcnOfS3B21>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 0, fcnProtoType)>
+%endfunction

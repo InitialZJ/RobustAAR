@@ -1,0 +1,3588 @@
+%implements s44_b0_9euqc_TLCInterface "C"
+
+%function getInputAddr_43_14_1_32_34_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.y_c" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_14_1_32_34_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.y_c" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_14_1_32_34_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope38_PWORK"
+%endfunction
+
+%function getDWork_43_14_1_32_34_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope38_PWORK"
+%endfunction
+
+%function getInputAddr_43_15_1_32_35_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.y_c" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_15_1_32_35_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.y_c" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_15_1_32_35_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope40_PWORK"
+%endfunction
+
+%function getDWork_43_15_1_32_35_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope40_PWORK"
+%endfunction
+
+%function getInputAddr_43_95_1_32_36_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.y_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_95_1_32_36_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.y_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_95_1_32_36_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope1_PWORK"
+%endfunction
+
+%function getDWork_43_95_1_32_36_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope1_PWORK"
+%endfunction
+
+%function getInputAddr_43_96_1_32_37_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.y_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_96_1_32_37_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.y_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_96_1_32_37_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope10_PWORK"
+%endfunction
+
+%function getDWork_43_96_1_32_37_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope10_PWORK"
+%endfunction
+
+%function getInputAddr_43_97_1_32_38_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Gain6"
+%endfunction
+
+%function getInput_43_97_1_32_38_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Gain6"
+%endfunction
+
+%function getInputAddr_43_98_1_32_39_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Gain3"
+%endfunction
+
+%function getInput_43_98_1_32_39_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Gain3"
+%endfunction
+
+%function getInputAddr_43_99_1_32_40_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Gain5"
+%endfunction
+
+%function getInput_43_99_1_32_40_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Gain5"
+%endfunction
+
+%function getInputAddr_43_100_1_32_41_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.u" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_100_1_32_41_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.u" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_100_1_32_41_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope6_PWORK"
+%endfunction
+
+%function getDWork_43_100_1_32_41_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope6_PWORK"
+%endfunction
+
+%function getInputAddr_43_101_1_32_42_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.u_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_101_1_32_42_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.u_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_101_1_32_42_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope7_PWORK"
+%endfunction
+
+%function getDWork_43_101_1_32_42_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope7_PWORK"
+%endfunction
+
+%function getInputAddr_43_102_1_32_43_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.y" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_102_1_32_43_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.y" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_102_1_32_43_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope8_PWORK"
+%endfunction
+
+%function getDWork_43_102_1_32_43_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope8_PWORK"
+%endfunction
+
+%function getInputAddr_43_103_1_32_44_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.y_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_103_1_32_44_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.y_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_103_1_32_44_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope9_PWORK"
+%endfunction
+
+%function getDWork_43_103_1_32_44_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope9_PWORK"
+%endfunction
+
+%function getInputAddr_43_104_1_32_45_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Memory2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_104_1_32_45_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Memory2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_104_1_32_45_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace2_PWORK"
+%endfunction
+
+%function getDWork_43_104_1_32_45_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace2_PWORK"
+%endfunction
+
+%function getInputAddr_43_111_1_32_46_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Sum1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_111_1_32_46_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Sum1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_112_1_32_47_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Sum3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_112_1_32_47_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Sum3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_115_1_32_48_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.F" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_115_1_32_48_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.F" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_129_1_32_49_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.t0"
+%endfunction
+
+%function getInput_43_129_1_32_49_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.t0"
+%endfunction
+
+%function getInputAddr_43_130_1_32_50_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.t0"
+%endfunction
+
+%function getInput_43_130_1_32_50_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.t0"
+%endfunction
+
+%function getDWorkAddr_43_130_1_32_50_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace3_PWORK"
+%endfunction
+
+%function getDWork_43_130_1_32_50_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace3_PWORK"
+%endfunction
+
+%function getInputAddr_43_131_1_32_51_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator1_o"
+%endfunction
+
+%function getInput_43_131_1_32_51_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator1_o"
+%endfunction
+
+%function getInputAddr_43_132_1_32_52_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.ddl_1"
+%endfunction
+
+%function getInput_43_132_1_32_52_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.ddl_1"
+%endfunction
+
+%function getInputAddr_43_133_1_32_53_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Tt"
+%endfunction
+
+%function getInput_43_133_1_32_53_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Tt"
+%endfunction
+
+%function getInputAddr_43_134_1_32_54_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Saturation"
+%endfunction
+
+%function getInput_43_134_1_32_54_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Saturation"
+%endfunction
+
+%function getInputAddr_43_135_1_32_55_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.ddl1out"
+%endfunction
+
+%function getInput_43_135_1_32_55_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.ddl1out"
+%endfunction
+
+%function getInputAddr_43_136_1_32_56_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.dl_k"
+%endfunction
+
+%function getInput_43_136_1_32_56_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.dl_k"
+%endfunction
+
+%function getInputAddr_43_137_1_32_57_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator1_o"
+%endfunction
+
+%function getInput_43_137_1_32_57_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator1_o"
+%endfunction
+
+%function getDWorkAddr_43_137_1_32_57_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace3_PWORK_p"
+%endfunction
+
+%function getDWork_43_137_1_32_57_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace3_PWORK_p"
+%endfunction
+
+%function getInputAddr_43_138_1_32_58_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Q" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_138_1_32_58_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Q" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_140_1_32_59_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.alpha" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_140_1_32_59_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.alpha" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_142_1_32_60_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.a" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_142_1_32_60_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.a" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_143_1_32_61_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Ref" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_143_1_32_61_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Ref" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_144_1_32_62_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Df_mid" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_144_1_32_62_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Df_mid" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_145_1_32_63_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Red" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_145_1_32_63_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Red" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_146_1_32_64_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Dd_mid" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_146_1_32_64_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Dd_mid" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_147_1_32_65_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Df" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_147_1_32_65_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Df" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_148_1_32_66_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Dd" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_148_1_32_66_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Dd" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_149_1_32_67_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.D" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_149_1_32_67_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.D" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_150_1_32_68_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Ddr" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_150_1_32_68_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Ddr" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_151_1_32_69_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.fen_norm" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_151_1_32_69_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.fen_norm" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_152_1_32_70_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.fen" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_152_1_32_70_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.fen" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_153_1_32_71_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_153_1_32_71_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_154_1_32_72_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_154_1_32_72_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_155_1_32_73_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_155_1_32_73_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_155_1_32_73_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getDWork_43_155_1_32_73_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getInputAddr_43_156_1_32_74_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_156_1_32_74_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_156_1_32_74_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace1_PWORK"
+%endfunction
+
+%function getDWork_43_156_1_32_74_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace1_PWORK"
+%endfunction
+
+%function getInputAddr_43_157_1_32_75_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_157_1_32_75_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_157_1_32_75_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace2_PWORK_i"
+%endfunction
+
+%function getDWork_43_157_1_32_75_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace2_PWORK_i"
+%endfunction
+
+%function getInputAddr_43_169_1_32_76_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Merge" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_169_1_32_76_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Merge" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_170_1_32_77_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Sum_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_170_1_32_77_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Sum_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_171_1_32_78_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_f" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_171_1_32_78_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_f" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_172_1_32_79_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_172_1_32_79_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_172_1_32_79_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_172_1_32_79_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_172_1_32_79_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_172_1_32_79_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_172_1_32_79_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_172_1_32_79_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_173_1_32_80_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UDPReceive_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_173_1_32_80_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UDPReceive_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_173_1_32_80_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UDPReceive_o2"
+%endfunction
+
+%function getOutput_43_173_1_32_80_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UDPReceive_o2"
+%endfunction
+
+%function getDWorkAddr_43_173_1_32_80_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.UDPReceive_IWORK"
+%endfunction
+
+%function getDWork_43_173_1_32_80_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.UDPReceive_IWORK"
+%endfunction
+
+%function getDWorkAddr_43_173_1_32_80_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.UDPReceive_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_173_1_32_80_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.UDPReceive_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_173_1_32_80_1_193(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P2"
+%endfunction
+
+%function getParam_43_173_1_32_80_1_193(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P2"
+%endfunction
+
+%function getParamAddr_43_173_1_32_80_1_195(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P3"
+%endfunction
+
+%function getParam_43_173_1_32_80_1_195(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P3"
+%endfunction
+
+%function getParamAddr_43_173_1_32_80_1_197(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P4"
+%endfunction
+
+%function getParam_43_173_1_32_80_1_197(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P4"
+%endfunction
+
+%function getParamAddr_43_173_1_32_80_1_199(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P5"
+%endfunction
+
+%function getParam_43_173_1_32_80_1_199(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P5"
+%endfunction
+
+%function getParamAddr_43_173_1_32_80_1_201(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P6"
+%endfunction
+
+%function getParam_43_173_1_32_80_1_201(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P6"
+%endfunction
+
+%function getParamAddr_43_173_1_32_80_1_205(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P8"
+%endfunction
+
+%function getParam_43_173_1_32_80_1_205(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P8"
+%endfunction
+
+%function getParamAddr_43_173_1_32_80_1_207(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P9"
+%endfunction
+
+%function getParam_43_173_1_32_80_1_207(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P9"
+%endfunction
+
+%function getInputAddr_43_179_1_32_81_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Sum7" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_179_1_32_81_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Sum7" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_180_1_32_82_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_180_1_32_82_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_180_1_32_82_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_180_1_32_82_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_180_1_32_82_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_180_1_32_82_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_181_1_32_83_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_181_1_32_83_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_181_1_32_83_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_181_1_32_83_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_181_1_32_83_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_181_1_32_83_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_182_1_32_84_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_182_1_32_84_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_182_1_32_84_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_182_1_32_84_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_182_1_32_84_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_182_1_32_84_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_183_1_32_85_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_183_1_32_85_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_183_1_32_85_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_183_1_32_85_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_183_1_32_85_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_183_1_32_85_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_184_1_32_86_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_184_1_32_86_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_184_1_32_86_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_184_1_32_86_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_184_1_32_86_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_184_1_32_86_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_187_1_32_87_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(48, 0, "")> %% rtb_y_p
+
+%return "&rtb_y_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_187_1_32_87_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(48, 0, "")> %% rtb_y_p
+
+%return "rtb_y_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_188_1_32_88_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Clock_a"
+%endfunction
+
+%function getInput_43_188_1_32_88_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Clock_a"
+%endfunction
+
+%function getDWorkAddr_43_188_1_32_88_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace_PWORK_n"
+%endfunction
+
+%function getDWork_43_188_1_32_88_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace_PWORK_n"
+%endfunction
+
+%function getInputAddr_43_190_1_32_89_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Subtract" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_190_1_32_89_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Subtract" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_190_1_32_89_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace1_PWORK_o"
+%endfunction
+
+%function getDWork_43_190_1_32_89_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace1_PWORK_o"
+%endfunction
+
+%function getInputAddr_43_193_1_32_90_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Product_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_193_1_32_90_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Product_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_194_1_32_91_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.xeyeze" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_194_1_32_91_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.xeyeze" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_195_1_32_92_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.ubvbwb" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_195_1_32_92_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.ubvbwb" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_196_1_32_93_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Sum" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_196_1_32_93_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Sum" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_121_1_32_94_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return ""
+%endfunction
+
+%function getInput_43_121_1_32_94_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return ""
+%endfunction
+
+%function getOutputAddr_43_121_1_32_94_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o1"
+%endfunction
+
+%function getOutput_43_121_1_32_94_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o1"
+%endfunction
+
+%function getOutputAddr_43_121_1_32_94_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o2"
+%endfunction
+
+%function getOutput_43_121_1_32_94_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o2"
+%endfunction
+
+%function getOutputAddr_43_121_1_32_94_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o3"
+%endfunction
+
+%function getOutput_43_121_1_32_94_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o3"
+%endfunction
+
+%function getOutputAddr_43_121_1_32_94_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o4"
+%endfunction
+
+%function getOutput_43_121_1_32_94_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o4"
+%endfunction
+
+%function getDWorkAddr_43_121_1_32_94_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.SFunction_alt_gm"
+%endfunction
+
+%function getDWork_43_121_1_32_94_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.SFunction_alt_gm"
+%endfunction
+
+%function getDWorkAddr_43_121_1_32_94_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.SFunction_temp_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_121_1_32_94_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.SFunction_temp_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_121_1_32_94_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.SFunction_dens_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_121_1_32_94_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.SFunction_dens_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_121_1_32_94_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.SFunction_alt_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_121_1_32_94_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.SFunction_alt_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_121_1_32_94_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.SFunction_minmax" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_121_1_32_94_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.SFunction_minmax" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_121_1_32_94_1_288(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(288, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_121_1_32_94_1_288(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(288, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_121_1_32_94_1_289(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(289, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_121_1_32_94_1_289(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(289, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_121_1_32_94_1_284(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(284, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_121_1_32_94_1_284(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(284, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_121_1_32_94_1_54(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.COESAAtmosphereModel_action"
+%endfunction
+
+%function getParam_43_121_1_32_94_1_54(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.COESAAtmosphereModel_action"
+%endfunction
+
+%function getOutputAddr_43_173_1_32_95_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UDPReceive_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_173_1_32_95_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UDPReceive_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_173_1_32_95_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UDPReceive_o2"
+%endfunction
+
+%function getOutput_43_173_1_32_95_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UDPReceive_o2"
+%endfunction
+
+%function getDWorkAddr_43_173_1_32_95_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.UDPReceive_IWORK"
+%endfunction
+
+%function getDWork_43_173_1_32_95_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.UDPReceive_IWORK"
+%endfunction
+
+%function getDWorkAddr_43_173_1_32_95_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.UDPReceive_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_173_1_32_95_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.UDPReceive_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_173_1_32_95_1_193(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P2"
+%endfunction
+
+%function getParam_43_173_1_32_95_1_193(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P2"
+%endfunction
+
+%function getParamAddr_43_173_1_32_95_1_195(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P3"
+%endfunction
+
+%function getParam_43_173_1_32_95_1_195(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P3"
+%endfunction
+
+%function getParamAddr_43_173_1_32_95_1_197(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P4"
+%endfunction
+
+%function getParam_43_173_1_32_95_1_197(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P4"
+%endfunction
+
+%function getParamAddr_43_173_1_32_95_1_199(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P5"
+%endfunction
+
+%function getParam_43_173_1_32_95_1_199(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P5"
+%endfunction
+
+%function getParamAddr_43_173_1_32_95_1_201(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P6"
+%endfunction
+
+%function getParam_43_173_1_32_95_1_201(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P6"
+%endfunction
+
+%function getParamAddr_43_173_1_32_95_1_205(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P8"
+%endfunction
+
+%function getParam_43_173_1_32_95_1_205(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P8"
+%endfunction
+
+%function getParamAddr_43_173_1_32_95_1_207(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P9"
+%endfunction
+
+%function getParam_43_173_1_32_95_1_207(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P9"
+%endfunction
+
+%function getInputAddr_43_199_1_32_96_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_i"
+%endfunction
+
+%function getInput_43_199_1_32_96_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_i"
+%endfunction
+
+%function getOutputAddr_43_199_1_32_96_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o1_b"
+%endfunction
+
+%function getOutput_43_199_1_32_96_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o1_b"
+%endfunction
+
+%function getOutputAddr_43_199_1_32_96_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o2_o"
+%endfunction
+
+%function getOutput_43_199_1_32_96_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o2_o"
+%endfunction
+
+%function getOutputAddr_43_199_1_32_96_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o3_k"
+%endfunction
+
+%function getOutput_43_199_1_32_96_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o3_k"
+%endfunction
+
+%function getOutputAddr_43_199_1_32_96_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o4_e"
+%endfunction
+
+%function getOutput_43_199_1_32_96_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o4_e"
+%endfunction
+
+%function getDWorkAddr_43_199_1_32_96_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.SFunction_temp_table_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_199_1_32_96_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.SFunction_temp_table_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_199_1_32_96_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.SFunction_pres_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_199_1_32_96_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.SFunction_pres_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_199_1_32_96_1_289(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(289, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_199_1_32_96_1_289(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(289, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_199_1_32_96_1_284(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(284, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_199_1_32_96_1_284(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(284, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_199_1_32_96_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.COESAAtmosphereModel_action_k"
+%endfunction
+
+%function getParam_43_199_1_32_96_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.COESAAtmosphereModel_action_k"
+%endfunction
+
+%function getInputAddr_43_14_1_34_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.y_c" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_14_1_34_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.y_c" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_14_1_34_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope38_PWORK"
+%endfunction
+
+%function getDWork_43_14_1_34_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope38_PWORK"
+%endfunction
+
+%function getInputAddr_43_15_1_34_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.y_c" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_15_1_34_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.y_c" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_15_1_34_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope40_PWORK"
+%endfunction
+
+%function getDWork_43_15_1_34_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope40_PWORK"
+%endfunction
+
+%function getInputAddr_43_25_1_34_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion3_i" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_25_1_34_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion3_i" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_25_1_34_2_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.IndexVector" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_25_1_34_2_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.IndexVector" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_25_1_34_2_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.IndexVector1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_25_1_34_2_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.IndexVector1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_25_1_34_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.PayLoad" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_25_1_34_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.PayLoad" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_30_1_34_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion5_p"
+%endfunction
+
+%function getInput_43_30_1_34_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion5_p"
+%endfunction
+
+%function getInputAddr_43_30_1_34_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.VehicleIDsfrom1to1_Value" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_30_1_34_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.VehicleIDsfrom1to1_Value" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_30_1_34_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.VehicleTypefrom1to4_Value" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_30_1_34_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.VehicleTypefrom1to4_Value" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_30_1_34_3_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_30_1_34_3_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_30_1_34_3_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_30_1_34_3_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_30_1_34_3_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion4_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_30_1_34_3_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion4_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_30_1_34_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.PayLoad_m" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_30_1_34_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.PayLoad_m" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_36_1_34_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion_h" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_36_1_34_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion_h" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_36_1_34_4_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_36_1_34_4_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_36_1_34_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.PayLoad_c" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_36_1_34_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.PayLoad_c" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_42_1_34_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion_m" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_42_1_34_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion_m" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_42_1_34_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion1_j" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_42_1_34_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion1_j" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_42_1_34_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.PayLoad_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_42_1_34_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.PayLoad_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_45_1_34_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion"
+%endfunction
+
+%function getInput_43_45_1_34_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion"
+%endfunction
+
+%function getInputAddr_43_45_1_34_6_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion1_m"
+%endfunction
+
+%function getInput_43_45_1_34_6_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion1_m"
+%endfunction
+
+%function getOutputAddr_43_45_1_34_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.PackageHead" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_45_1_34_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.PackageHead" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_57_1_34_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.TmpSignalConversionAtPayLoadInp" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_57_1_34_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.TmpSignalConversionAtPayLoadInp" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_57_1_34_7_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Clock"
+%endfunction
+
+%function getInput_43_57_1_34_7_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Clock"
+%endfunction
+
+%function getInputAddr_43_57_1_34_7_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_57_1_34_7_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_57_1_34_7_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.Constant5_Value" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_57_1_34_7_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.Constant5_Value" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_57_1_34_7_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.reserve_Value" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_57_1_34_7_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.reserve_Value" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_57_1_34_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.PayLoad_k" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_57_1_34_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.PayLoad_k" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_62_1_34_8_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion4"
+%endfunction
+
+%function getInput_43_62_1_34_8_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion4"
+%endfunction
+
+%function getInputAddr_43_62_1_34_8_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion_c" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_62_1_34_8_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion_c" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_62_1_34_8_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion1_a" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_62_1_34_8_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion1_a" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_62_1_34_8_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.DataTypeConversion2_b" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_62_1_34_8_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.DataTypeConversion2_b" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_62_1_34_8_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.PayLoad_d" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_62_1_34_8_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.PayLoad_d" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_95_1_34_9_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.y_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_95_1_34_9_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.y_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_95_1_34_9_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope1_PWORK"
+%endfunction
+
+%function getDWork_43_95_1_34_9_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope1_PWORK"
+%endfunction
+
+%function getInputAddr_43_96_1_34_10_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.y_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_96_1_34_10_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.y_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_96_1_34_10_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope10_PWORK"
+%endfunction
+
+%function getDWork_43_96_1_34_10_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope10_PWORK"
+%endfunction
+
+%function getInputAddr_43_97_1_34_11_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Gain6"
+%endfunction
+
+%function getInput_43_97_1_34_11_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Gain6"
+%endfunction
+
+%function getInputAddr_43_98_1_34_12_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Gain3"
+%endfunction
+
+%function getInput_43_98_1_34_12_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Gain3"
+%endfunction
+
+%function getInputAddr_43_99_1_34_13_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Gain5"
+%endfunction
+
+%function getInput_43_99_1_34_13_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Gain5"
+%endfunction
+
+%function getInputAddr_43_100_1_34_14_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.u" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_100_1_34_14_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.u" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_100_1_34_14_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope6_PWORK"
+%endfunction
+
+%function getDWork_43_100_1_34_14_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope6_PWORK"
+%endfunction
+
+%function getInputAddr_43_101_1_34_15_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.u_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_101_1_34_15_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.u_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_101_1_34_15_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope7_PWORK"
+%endfunction
+
+%function getDWork_43_101_1_34_15_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope7_PWORK"
+%endfunction
+
+%function getInputAddr_43_102_1_34_16_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.y" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_102_1_34_16_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.y" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_102_1_34_16_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope8_PWORK"
+%endfunction
+
+%function getDWork_43_102_1_34_16_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope8_PWORK"
+%endfunction
+
+%function getInputAddr_43_103_1_34_17_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.y_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_103_1_34_17_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.y_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_103_1_34_17_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope9_PWORK"
+%endfunction
+
+%function getDWork_43_103_1_34_17_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope9_PWORK"
+%endfunction
+
+%function getInputAddr_43_104_1_34_18_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Memory2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_104_1_34_18_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Memory2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_104_1_34_18_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace2_PWORK"
+%endfunction
+
+%function getDWork_43_104_1_34_18_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace2_PWORK"
+%endfunction
+
+%function getInputAddr_43_111_1_34_19_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Sum1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_111_1_34_19_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Sum1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_112_1_34_20_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Sum3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_112_1_34_20_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Sum3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_115_1_34_21_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.F" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_115_1_34_21_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.F" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_121_1_34_22_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.height"
+%endfunction
+
+%function getInput_43_121_1_34_22_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.height"
+%endfunction
+
+%function getOutputAddr_43_121_1_34_22_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o1"
+%endfunction
+
+%function getOutput_43_121_1_34_22_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o1"
+%endfunction
+
+%function getOutputAddr_43_121_1_34_22_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o2"
+%endfunction
+
+%function getOutput_43_121_1_34_22_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o2"
+%endfunction
+
+%function getOutputAddr_43_121_1_34_22_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o3"
+%endfunction
+
+%function getOutput_43_121_1_34_22_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o3"
+%endfunction
+
+%function getOutputAddr_43_121_1_34_22_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o4"
+%endfunction
+
+%function getOutput_43_121_1_34_22_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o4"
+%endfunction
+
+%function getDWorkAddr_43_121_1_34_22_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.SFunction_alt_gm"
+%endfunction
+
+%function getDWork_43_121_1_34_22_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.SFunction_alt_gm"
+%endfunction
+
+%function getDWorkAddr_43_121_1_34_22_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.SFunction_temp_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_121_1_34_22_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.SFunction_temp_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_121_1_34_22_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.SFunction_dens_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_121_1_34_22_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.SFunction_dens_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_121_1_34_22_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.SFunction_alt_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_121_1_34_22_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.SFunction_alt_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_121_1_34_22_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.SFunction_minmax" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_121_1_34_22_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.SFunction_minmax" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_121_1_34_22_1_288(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(288, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_121_1_34_22_1_288(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(288, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_121_1_34_22_1_289(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(289, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_121_1_34_22_1_289(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(289, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_121_1_34_22_1_284(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(284, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_121_1_34_22_1_284(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(284, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_121_1_34_22_1_54(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.COESAAtmosphereModel_action"
+%endfunction
+
+%function getParam_43_121_1_34_22_1_54(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.COESAAtmosphereModel_action"
+%endfunction
+
+%function getInputAddr_43_129_1_34_23_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.t0"
+%endfunction
+
+%function getInput_43_129_1_34_23_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.t0"
+%endfunction
+
+%function getInputAddr_43_130_1_34_24_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.t0"
+%endfunction
+
+%function getInput_43_130_1_34_24_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.t0"
+%endfunction
+
+%function getDWorkAddr_43_130_1_34_24_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace3_PWORK"
+%endfunction
+
+%function getDWork_43_130_1_34_24_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace3_PWORK"
+%endfunction
+
+%function getInputAddr_43_131_1_34_25_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator1_o"
+%endfunction
+
+%function getInput_43_131_1_34_25_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator1_o"
+%endfunction
+
+%function getInputAddr_43_132_1_34_26_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.ddl_1"
+%endfunction
+
+%function getInput_43_132_1_34_26_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.ddl_1"
+%endfunction
+
+%function getInputAddr_43_133_1_34_27_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Tt"
+%endfunction
+
+%function getInput_43_133_1_34_27_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Tt"
+%endfunction
+
+%function getInputAddr_43_134_1_34_28_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Saturation"
+%endfunction
+
+%function getInput_43_134_1_34_28_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Saturation"
+%endfunction
+
+%function getInputAddr_43_135_1_34_29_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.ddl1out"
+%endfunction
+
+%function getInput_43_135_1_34_29_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.ddl1out"
+%endfunction
+
+%function getInputAddr_43_136_1_34_30_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.dl_k"
+%endfunction
+
+%function getInput_43_136_1_34_30_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.dl_k"
+%endfunction
+
+%function getInputAddr_43_137_1_34_31_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator1_o"
+%endfunction
+
+%function getInput_43_137_1_34_31_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator1_o"
+%endfunction
+
+%function getDWorkAddr_43_137_1_34_31_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace3_PWORK_p"
+%endfunction
+
+%function getDWork_43_137_1_34_31_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace3_PWORK_p"
+%endfunction
+
+%function getInputAddr_43_138_1_34_32_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Q" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_138_1_34_32_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Q" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_140_1_34_33_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.alpha" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_140_1_34_33_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.alpha" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_142_1_34_34_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.a" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_142_1_34_34_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.a" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_143_1_34_35_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Ref" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_143_1_34_35_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Ref" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_144_1_34_36_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Df_mid" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_144_1_34_36_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Df_mid" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_145_1_34_37_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Red" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_145_1_34_37_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Red" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_146_1_34_38_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Dd_mid" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_146_1_34_38_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Dd_mid" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_147_1_34_39_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Df" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_147_1_34_39_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Df" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_148_1_34_40_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Dd" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_148_1_34_40_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Dd" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_149_1_34_41_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.D" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_149_1_34_41_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.D" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_150_1_34_42_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Ddr" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_150_1_34_42_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Ddr" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_151_1_34_43_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.fen_norm" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_151_1_34_43_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.fen_norm" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_152_1_34_44_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.fen" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_152_1_34_44_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.fen" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_153_1_34_45_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_153_1_34_45_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_154_1_34_46_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_154_1_34_46_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_155_1_34_47_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_155_1_34_47_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_155_1_34_47_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getDWork_43_155_1_34_47_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getInputAddr_43_156_1_34_48_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_156_1_34_48_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_156_1_34_48_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace1_PWORK"
+%endfunction
+
+%function getDWork_43_156_1_34_48_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace1_PWORK"
+%endfunction
+
+%function getInputAddr_43_157_1_34_49_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_157_1_34_49_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_157_1_34_49_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace2_PWORK_i"
+%endfunction
+
+%function getDWork_43_157_1_34_49_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace2_PWORK_i"
+%endfunction
+
+%function getInputAddr_43_169_1_34_50_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Merge" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_169_1_34_50_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Merge" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_170_1_34_51_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Sum_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_170_1_34_51_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Sum_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_171_1_34_52_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_f" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_171_1_34_52_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_f" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_172_1_34_53_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_172_1_34_53_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_172_1_34_53_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_172_1_34_53_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_172_1_34_53_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_172_1_34_53_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_172_1_34_53_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.Scope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_172_1_34_53_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.Scope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_173_1_34_54_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UDPReceive_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_173_1_34_54_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UDPReceive_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_173_1_34_54_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UDPReceive_o2"
+%endfunction
+
+%function getOutput_43_173_1_34_54_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UDPReceive_o2"
+%endfunction
+
+%function getDWorkAddr_43_173_1_34_54_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.UDPReceive_IWORK"
+%endfunction
+
+%function getDWork_43_173_1_34_54_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.UDPReceive_IWORK"
+%endfunction
+
+%function getDWorkAddr_43_173_1_34_54_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.UDPReceive_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_173_1_34_54_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.UDPReceive_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_173_1_34_54_1_193(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P2"
+%endfunction
+
+%function getParam_43_173_1_34_54_1_193(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P2"
+%endfunction
+
+%function getParamAddr_43_173_1_34_54_1_195(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P3"
+%endfunction
+
+%function getParam_43_173_1_34_54_1_195(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P3"
+%endfunction
+
+%function getParamAddr_43_173_1_34_54_1_197(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P4"
+%endfunction
+
+%function getParam_43_173_1_34_54_1_197(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P4"
+%endfunction
+
+%function getParamAddr_43_173_1_34_54_1_199(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P5"
+%endfunction
+
+%function getParam_43_173_1_34_54_1_199(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P5"
+%endfunction
+
+%function getParamAddr_43_173_1_34_54_1_201(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P6"
+%endfunction
+
+%function getParam_43_173_1_34_54_1_201(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P6"
+%endfunction
+
+%function getParamAddr_43_173_1_34_54_1_205(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P8"
+%endfunction
+
+%function getParam_43_173_1_34_54_1_205(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P8"
+%endfunction
+
+%function getParamAddr_43_173_1_34_54_1_207(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P9"
+%endfunction
+
+%function getParam_43_173_1_34_54_1_207(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P9"
+%endfunction
+
+%function getInputAddr_43_179_1_34_55_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Sum7" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_179_1_34_55_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Sum7" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_180_1_34_56_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_180_1_34_56_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_180_1_34_56_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_180_1_34_56_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_180_1_34_56_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_180_1_34_56_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_181_1_34_57_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_181_1_34_57_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_181_1_34_57_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_181_1_34_57_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_181_1_34_57_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_181_1_34_57_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_182_1_34_58_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_182_1_34_58_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_182_1_34_58_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_182_1_34_58_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_182_1_34_58_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_182_1_34_58_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_183_1_34_59_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_183_1_34_59_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_183_1_34_59_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_183_1_34_59_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_183_1_34_59_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_183_1_34_59_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_184_1_34_60_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_184_1_34_60_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_184_1_34_60_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_184_1_34_60_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_184_1_34_60_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_184_1_34_60_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_187_1_34_61_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(48, 0, "")> %% rtb_y_p
+
+%return "&rtb_y_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_187_1_34_61_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(48, 0, "")> %% rtb_y_p
+
+%return "rtb_y_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_188_1_34_62_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Clock_a"
+%endfunction
+
+%function getInput_43_188_1_34_62_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Clock_a"
+%endfunction
+
+%function getDWorkAddr_43_188_1_34_62_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace_PWORK_n"
+%endfunction
+
+%function getDWork_43_188_1_34_62_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace_PWORK_n"
+%endfunction
+
+%function getInputAddr_43_190_1_34_63_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Subtract" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_190_1_34_63_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Subtract" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_190_1_34_63_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace1_PWORK_o"
+%endfunction
+
+%function getDWork_43_190_1_34_63_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace1_PWORK_o"
+%endfunction
+
+%function getInputAddr_43_193_1_34_64_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Product_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_193_1_34_64_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Product_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_194_1_34_65_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.xeyeze" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_194_1_34_65_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.xeyeze" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_195_1_34_66_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.ubvbwb" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_195_1_34_66_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.ubvbwb" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_196_1_34_67_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Sum" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_196_1_34_67_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Sum" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_199_1_34_68_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UnitConversion_i"
+%endfunction
+
+%function getInput_43_199_1_34_68_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UnitConversion_i"
+%endfunction
+
+%function getOutputAddr_43_199_1_34_68_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o1_b"
+%endfunction
+
+%function getOutput_43_199_1_34_68_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o1_b"
+%endfunction
+
+%function getOutputAddr_43_199_1_34_68_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o2_o"
+%endfunction
+
+%function getOutput_43_199_1_34_68_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o2_o"
+%endfunction
+
+%function getOutputAddr_43_199_1_34_68_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o3_k"
+%endfunction
+
+%function getOutput_43_199_1_34_68_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o3_k"
+%endfunction
+
+%function getOutputAddr_43_199_1_34_68_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.SFunction_o4_e"
+%endfunction
+
+%function getOutput_43_199_1_34_68_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.SFunction_o4_e"
+%endfunction
+
+%function getDWorkAddr_43_199_1_34_68_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.SFunction_temp_table_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_199_1_34_68_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.SFunction_temp_table_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_199_1_34_68_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.SFunction_pres_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_199_1_34_68_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.SFunction_pres_table" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_199_1_34_68_1_289(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(289, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_199_1_34_68_1_289(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(289, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_199_1_34_68_1_284(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(284, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_199_1_34_68_1_284(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(284, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_199_1_34_68_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.COESAAtmosphereModel_action_k"
+%endfunction
+
+%function getParam_43_199_1_34_68_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.COESAAtmosphereModel_action_k"
+%endfunction
+
+%function getInputAddr_43_201_1_34_69_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(142, 0, "")> %% rtb_jxk
+
+%return "&rtb_jxk"
+%endfunction
+
+%function getInput_43_201_1_34_69_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(142, 0, "")> %% rtb_jxk
+
+%return "rtb_jxk"
+%endfunction
+
+%function getInputAddr_43_201_1_34_69_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(128, 0, "")> %% rtb_UnitConversion_n
+
+%return "&rtb_UnitConversion_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_201_1_34_69_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(128, 0, "")> %% rtb_UnitConversion_n
+
+%return "rtb_UnitConversion_n" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_201_1_34_69_0_2(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(138, 0, "")> %% rtb_Sum_ah
+
+%return "&rtb_Sum_ah" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_201_1_34_69_0_2(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(138, 0, "")> %% rtb_Sum_ah
+
+%return "rtb_Sum_ah" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_201_1_34_69_0_3(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(86, 0, "")> %% rtb_Integrator_e
+
+%return "&rtb_Integrator_e"
+%endfunction
+
+%function getInput_43_201_1_34_69_0_3(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(86, 0, "")> %% rtb_Integrator_e
+
+%return "rtb_Integrator_e"
+%endfunction
+
+%function getInputAddr_43_201_1_34_69_0_4(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(87, 0, "")> %% rtb_Integrator_d
+
+%return "&rtb_Integrator_d"
+%endfunction
+
+%function getInput_43_201_1_34_69_0_4(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(87, 0, "")> %% rtb_Integrator_d
+
+%return "rtb_Integrator_d"
+%endfunction
+
+%function getInputAddr_43_201_1_34_69_0_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(88, 0, "")> %% rtb_Integrator_k
+
+%return "&rtb_Integrator_k"
+%endfunction
+
+%function getInput_43_201_1_34_69_0_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(88, 0, "")> %% rtb_Integrator_k
+
+%return "rtb_Integrator_k"
+%endfunction
+
+%function getInputAddr_43_201_1_34_69_0_6(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.fi_flag"
+%endfunction
+
+%function getInput_43_201_1_34_69_0_6(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.fi_flag"
+%endfunction
+
+%function getInputAddr_43_201_1_34_69_0_7(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(137, 0, "")> %% rtb_kxi
+
+%return "&rtb_kxi"
+%endfunction
+
+%function getInput_43_201_1_34_69_0_7(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(137, 0, "")> %% rtb_kxi
+
+%return "rtb_kxi"
+%endfunction
+
+%function getOutputAddr_43_201_1_34_69_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(126, 0, "")> %% rtb_InterpretedMATLABFunction
+
+%return "&rtb_InterpretedMATLABFunction" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_201_1_34_69_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(126, 0, "")> %% rtb_InterpretedMATLABFunction
+
+%return "rtb_InterpretedMATLABFunction" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_43_211_1_34_70_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(144, 0, "")> %% rtb_Gain_h
+
+%return "&rtb_Gain_h"
+%endfunction
+
+%function getInput_43_211_1_34_70_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(144, 0, "")> %% rtb_Gain_h
+
+%return "rtb_Gain_h"
+%endfunction
+
+%function getInputAddr_43_211_1_34_70_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(133, 0, "")> %% rtb_Sum1_m
+
+%return "&rtb_Sum1_m"
+%endfunction
+
+%function getInput_43_211_1_34_70_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(133, 0, "")> %% rtb_Sum1_m
+
+%return "rtb_Sum1_m"
+%endfunction
+
+%function getInputAddr_43_211_1_34_70_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(131, 0, "")> %% rtb_ixj
+
+%return "&rtb_ixj"
+%endfunction
+
+%function getInput_43_211_1_34_70_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(131, 0, "")> %% rtb_ixj
+
+%return "rtb_ixj"
+%endfunction
+
+%function getInputAddr_43_211_1_34_70_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.JulianDate_Value"
+%endfunction
+
+%function getInput_43_211_1_34_70_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.JulianDate_Value"
+%endfunction
+
+%function getOutputAddr_43_211_1_34_70_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.MatrixConcatenate" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_211_1_34_70_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.MatrixConcatenate" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_211_1_34_70_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.MatrixConcatenate" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_211_1_34_70_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.MatrixConcatenate" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_211_1_34_70_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.MatrixConcatenate" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_211_1_34_70_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.MatrixConcatenate" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_211_1_34_70_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.WGS84GravitySFunction_h"
+%endfunction
+
+%function getDWork_43_211_1_34_70_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.WGS84GravitySFunction_h"
+%endfunction
+
+%function getDWorkAddr_43_211_1_34_70_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.WGS84GravitySFunction_phi"
+%endfunction
+
+%function getDWork_43_211_1_34_70_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.WGS84GravitySFunction_phi"
+%endfunction
+
+%function getDWorkAddr_43_211_1_34_70_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.WGS84GravitySFunction_lambda"
+%endfunction
+
+%function getDWork_43_211_1_34_70_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.WGS84GravitySFunction_lambda"
+%endfunction
+
+%function getDWorkAddr_43_211_1_34_70_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.WGS84GravitySFunction_gamma_h"
+%endfunction
+
+%function getDWork_43_211_1_34_70_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.WGS84GravitySFunction_gamma_h"
+%endfunction
+
+%function getDWorkAddr_43_211_1_34_70_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.WGS84GravitySFunction_gamma_phi"
+%endfunction
+
+%function getDWork_43_211_1_34_70_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.WGS84GravitySFunction_gamma_phi"
+%endfunction
+
+%function getParamAddr_43_211_1_34_70_1_289(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(289, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_211_1_34_70_1_289(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(289, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_211_1_34_70_1_284(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(284, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_211_1_34_70_1_284(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(284, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_211_1_34_70_1_285(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(285, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_211_1_34_70_1_285(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(285, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_211_1_34_70_1_290(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(290, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_211_1_34_70_1_290(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(290, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_211_1_34_70_1_288(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(288, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParam_43_211_1_34_70_1_288(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(288, 0, 43, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_214_1_35_0_1_260(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.SimulationPace_P1"
+%endfunction
+
+%function getParam_43_214_1_35_0_1_260(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.SimulationPace_P1"
+%endfunction
+
+%function getParamAddr_43_214_1_35_0_1_261(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.SimulationPace_P2"
+%endfunction
+
+%function getParam_43_214_1_35_0_1_261(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.SimulationPace_P2"
+%endfunction
+
+%function getParamAddr_43_214_1_35_0_1_262(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.SimulationPace_P3"
+%endfunction
+
+%function getParam_43_214_1_35_0_1_262(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.SimulationPace_P3"
+%endfunction
+
+%function getParamAddr_43_214_1_35_0_1_263(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.SimulationPace_P4"
+%endfunction
+
+%function getParam_43_214_1_35_0_1_263(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.SimulationPace_P4"
+%endfunction
+
+%function getInputAddr_43_104_1_39_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Memory2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_104_1_39_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Memory2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_104_1_39_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace2_PWORK"
+%endfunction
+
+%function getDWork_43_104_1_39_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace2_PWORK"
+%endfunction
+
+%function getInputAddr_43_130_1_39_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.t0"
+%endfunction
+
+%function getInput_43_130_1_39_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.t0"
+%endfunction
+
+%function getDWorkAddr_43_130_1_39_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace3_PWORK"
+%endfunction
+
+%function getDWork_43_130_1_39_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace3_PWORK"
+%endfunction
+
+%function getInputAddr_43_137_1_39_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator1_o"
+%endfunction
+
+%function getInput_43_137_1_39_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator1_o"
+%endfunction
+
+%function getDWorkAddr_43_137_1_39_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace3_PWORK_p"
+%endfunction
+
+%function getDWork_43_137_1_39_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace3_PWORK_p"
+%endfunction
+
+%function getInputAddr_43_155_1_39_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_155_1_39_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_155_1_39_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getDWork_43_155_1_39_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getInputAddr_43_156_1_39_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Integrator3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_156_1_39_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Integrator3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_156_1_39_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace1_PWORK"
+%endfunction
+
+%function getDWork_43_156_1_39_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace1_PWORK"
+%endfunction
+
+%function getInputAddr_43_157_1_39_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_157_1_39_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_157_1_39_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace2_PWORK_i"
+%endfunction
+
+%function getDWork_43_157_1_39_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace2_PWORK_i"
+%endfunction
+
+%function getOutputAddr_43_173_1_39_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UDPReceive_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_173_1_39_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UDPReceive_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_173_1_39_6_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UDPReceive_o2"
+%endfunction
+
+%function getOutput_43_173_1_39_6_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UDPReceive_o2"
+%endfunction
+
+%function getDWorkAddr_43_173_1_39_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.UDPReceive_IWORK"
+%endfunction
+
+%function getDWork_43_173_1_39_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.UDPReceive_IWORK"
+%endfunction
+
+%function getDWorkAddr_43_173_1_39_6_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.UDPReceive_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_173_1_39_6_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.UDPReceive_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_173_1_39_6_1_193(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P2"
+%endfunction
+
+%function getParam_43_173_1_39_6_1_193(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P2"
+%endfunction
+
+%function getParamAddr_43_173_1_39_6_1_195(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P3"
+%endfunction
+
+%function getParam_43_173_1_39_6_1_195(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P3"
+%endfunction
+
+%function getParamAddr_43_173_1_39_6_1_197(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P4"
+%endfunction
+
+%function getParam_43_173_1_39_6_1_197(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P4"
+%endfunction
+
+%function getParamAddr_43_173_1_39_6_1_199(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P5"
+%endfunction
+
+%function getParam_43_173_1_39_6_1_199(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P5"
+%endfunction
+
+%function getParamAddr_43_173_1_39_6_1_201(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P6"
+%endfunction
+
+%function getParam_43_173_1_39_6_1_201(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P6"
+%endfunction
+
+%function getParamAddr_43_173_1_39_6_1_205(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P8"
+%endfunction
+
+%function getParam_43_173_1_39_6_1_205(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P8"
+%endfunction
+
+%function getParamAddr_43_173_1_39_6_1_207(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P9"
+%endfunction
+
+%function getParam_43_173_1_39_6_1_207(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P9"
+%endfunction
+
+%function getInputAddr_43_188_1_39_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Clock_a"
+%endfunction
+
+%function getInput_43_188_1_39_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Clock_a"
+%endfunction
+
+%function getDWorkAddr_43_188_1_39_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace_PWORK_n"
+%endfunction
+
+%function getDWork_43_188_1_39_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace_PWORK_n"
+%endfunction
+
+%function getInputAddr_43_190_1_39_8_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.Subtract" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_43_190_1_39_8_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.Subtract" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_43_190_1_39_8_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.ToWorkspace1_PWORK_o"
+%endfunction
+
+%function getDWork_43_190_1_39_8_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.ToWorkspace1_PWORK_o"
+%endfunction
+
+%function getOutputAddr_43_173_1_39_9_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UDPReceive_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_43_173_1_39_9_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UDPReceive_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_43_173_1_39_9_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_B.UDPReceive_o2"
+%endfunction
+
+%function getOutput_43_173_1_39_9_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_B.UDPReceive_o2"
+%endfunction
+
+%function getDWorkAddr_43_173_1_39_9_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.UDPReceive_IWORK"
+%endfunction
+
+%function getDWork_43_173_1_39_9_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.UDPReceive_IWORK"
+%endfunction
+
+%function getDWorkAddr_43_173_1_39_9_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_DW.UDPReceive_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_43_173_1_39_9_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_DW.UDPReceive_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_43_173_1_39_9_1_193(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P2"
+%endfunction
+
+%function getParam_43_173_1_39_9_1_193(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P2"
+%endfunction
+
+%function getParamAddr_43_173_1_39_9_1_195(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P3"
+%endfunction
+
+%function getParam_43_173_1_39_9_1_195(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P3"
+%endfunction
+
+%function getParamAddr_43_173_1_39_9_1_197(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P4"
+%endfunction
+
+%function getParam_43_173_1_39_9_1_197(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P4"
+%endfunction
+
+%function getParamAddr_43_173_1_39_9_1_199(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P5"
+%endfunction
+
+%function getParam_43_173_1_39_9_1_199(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P5"
+%endfunction
+
+%function getParamAddr_43_173_1_39_9_1_201(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P6"
+%endfunction
+
+%function getParam_43_173_1_39_9_1_201(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P6"
+%endfunction
+
+%function getParamAddr_43_173_1_39_9_1_205(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P8"
+%endfunction
+
+%function getParam_43_173_1_39_9_1_205(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P8"
+%endfunction
+
+%function getParamAddr_43_173_1_39_9_1_207(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&AirRefueling_Platform_P.UDPReceive_P9"
+%endfunction
+
+%function getParam_43_173_1_39_9_1_207(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "AirRefueling_Platform_P.UDPReceive_P9"
+%endfunction
+

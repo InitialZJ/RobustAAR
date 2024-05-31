@@ -7,7 +7,7 @@
 1. Open `\path\to\PX4PSP\RflySimUE5\RflySim3D.exe` and manually switch the map to `Desert`
 2. Modify the `ScaleXYZ` value of the drogue module in `AirRefueling_Platform.slx` to `[1,1,1]` and run
 
-<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/main/res/image-20240530203324293.png?token=GHSAT0AAAAAACM7L7JT63HJZUBLLTXPGAPAZSZHQJQ" alt="image-20240530203324293" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/main/res/image-20240530203324293.png" alt="image-20240530203324293" style="zoom:67%;" />
 
 3. Copy `all_process_night_exp.py` and `all_process_night_plot.py` to the parent directory
 4. Run `all_process_night_exp.py` to generate `data.csv`

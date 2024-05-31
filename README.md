@@ -12,15 +12,15 @@ This repository contains an all-weather robust visual navigation and localizatio
 
 2. Double-click `\path\to\PX4PSP\RflySim3D\RflySim3D.exe` to start the simulation and display the default scene
 
-<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/main/res/image-20240530162155493.png?token=GHSAT0AAAAAACM7L7JSHVNQIBZ2OLHFYDJQZSZHMWA" alt="image-20240530162155493" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/main/res/image-20240530162155493.png" alt="image-20240530162155493" style="zoom:50%;" />
 
 3. Open `matlab`, switch to the `\path\to\RobustAAR\AAR_Simulink` directory, open `AirRefueling_Platform.slx`, and click the run button above to generate the `AAR` scene in `RflySim3D`
 
-<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/main/res/image-20240530164701526.png?token=GHSAT0AAAAAACM7L7JS6BJJWVZVBBK46IQUZSZHNOA" alt="image-20240530164701526" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/main/res/image-20240530164701526.png" alt="image-20240530164701526" style="zoom:50%;" />
 
 4. The initial view is from the tanker's perspective. Press `B 1` to switch to the receiver's perspective.
 
-<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/main/res/image-20240530164748222.png?token=GHSAT0AAAAAACM7L7JTKGXKHBNVDAHLSRYOZSZHONA" alt="image-20240530171032438" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/InitialZJ/MarkdownPhotoes/main/res/image-20240530164748222.png" alt="image-20240530171032438" style="zoom:50%;" />
 
 ### Algorithms
 
